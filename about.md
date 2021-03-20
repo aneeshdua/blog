@@ -1,9 +1,8 @@
 ---
 layout: about
-image: /assets/img/blog/hydejack-9.jpg
+image: /assets/img/about-me.jpg
 description: >
-  A boutique Jekyll theme for hackers, nerds, and academics,
-  with a focus on personal sites that are meant to impress.
+  Hi, I am Aneesh Dua, a 22 year old with an instinct of a hacker. I like to be challenged. I like to look at things outside the normal perspective. I like to ponder over human psychology and life's unanswered questions.
 hide_description: true
 redirect_from:
   - /download/
@@ -12,6 +11,26 @@ redirect_from:
 # About
 
 <!--author-->
+
+## Work
+ * I am currently working as a Data Engineering Intern at Novartis Business Services, India.<br/>
+ * I have previously worked as a Summer Research Fellow at the Institute of Development and Research in Development Technology(in affiliation with Indian Academy of Sciences). I [published](https://ieeexplore.ieee.org/document/9036313){:target="_blank"} my work at the IEEE ISCON Conference,2019.<br/>
+ * I volunteered as a CTF contest devloper and organiser for the [Winja CTF](https://www.winja.site/past-events/winja-ctf-06march2020/){:target="_blank"}at the [Nullcon 2021 Conference](https://nullcon.net/website/goa-2021/training.php){:target="_blank"}. I developed Web and Crypto challenges for the latter.
+
+## Hobbies and Interests
+
+I am an avid FPS gamer. I love playing all kinds but competitive FPS is my thing. I love hacking contests, Jeopardy CTFs. I love zoning out listening to music. My taste is wide in the kind of the music I [enjoy](https://open.spotify.com/user/aneeshdua?si=hoGX-PMzSg6pEBT9UTyQ-Q){:target="_blank"}. Travel when possible, love being close to nature.   
+
+## Contact
+
+Want to get in touch? Wish to discuss an article?
+{:.faded}
+
+Please use the platforms on the left to get in touch.
+
+## Disclaimer
+
+The opinions stated here are my own, not necessarily those of my employer.
 
 
 [blog]: /

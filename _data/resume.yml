@@ -1,0 +1,62 @@
+# If you have a `resume.json` file, copy it into `_data` and delete this file.
+# If you don't have a JSON Resume you can just edit this YAML file instead.
+# See also: <https://jsonresume.org/>.
+basics:
+  name: "Aneesh Dua"
+  label: "DE | SDE | CTF Player"
+  email: "workstuff.dua@gmail.com"
+  phone: "+91-7678471056"
+  profiles:
+    - network: "LinkedIn"
+      username: "aneeshdua"
+      url: ""
+    - network: "Github"
+      username: "aneeshdua"
+      url: ""
+work:
+  - company: "Novartis Business Services, India"
+    position: "Associate Intern"
+    website: "https://www.novartis.in/"
+    startDate: "2021-01-05"
+    endDate: ""
+    summary: >
+      Working as a Data Engineer Intern.
+  
+  - company: "IDRBT,Indian Academy of Sciences"
+    position: "Summer Research Fellow"
+    website: "https://ieeexplore.ieee.org/abstract/document/9036313"
+    startDate: "2019-05-05"
+    endDate: "2019-07-05"
+    summary: >
+      Worked under Dr. B.M. Mehtre at the Center of Excellence of CyberSecurity. Researched and developed a secure IoT network router. Published work at the 2019 IEEE ISCON Conference.
+    
+volunteer:
+  - organization: "NullCon 2021"
+    position: "CTF Developer and Organiser"
+    website: "https://www.winja.site/past-events/winja-ctf-06march2020/"
+    startDate: "2020-11-15"
+    endDate: "2021-03-06"
+    summary: "A global CTF competition part of the NullCon Conference, 2021. The aim of the CTF was to promote women in Information Security."
+    highlights:
+      - "Developed two CTF challenges apart from the organisation work."
+education:
+  - institution: "Vellore Institute of Technology"
+    area: "Computer Science and Engineering"
+    studyType: "B.Tech"
+    startDate: "2017-07-01"
+    endDate: "2021-07-01"
+    gpa: "8.96"
+publications:
+  - name: "IISR: A Secure Router for IoT Networks"
+    publisher: "IEEE"
+    releaseDate: "2019-11-22"
+    website: "https://ieeexplore.ieee.org/abstract/document/9036313"
+    summary: "A secure IoT network router to defend against the OWASP Top 10 vulnerabilities for IoT devices."
+languages:
+  - language: "English"
+    fluency: "Fluent"
+  - language: "Hindi"
+    fluency: "Native Speaker"
+interests:
+  - name: "Gaming"
+  - name: "Travel"

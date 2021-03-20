@@ -36,13 +36,13 @@ keywords:              []
 # A (square) logo for your site.
 # If provided, it will be shown at the top of the sidebar.
 # It also used by the `jekyll-seo-tag` plugin.
-logo:                  /assets/img/logo.png
+logo:                  /assets/img/hm_white_medium.png
 
 # This should be the same author as first entry in `_data/authors.yml`.
 author:
   # Used by `jekyll-feed`:
-  name:                <Aneesh> <Dua>
-  email:               <workstuff.dua@gmail.com>
+  name:                Aneesh Dua
+  email:               workstuff.dua@gmail.com
   # # Used by `jekyll-seo-tag`:
   # twitter:             <username>
 
@@ -53,9 +53,7 @@ menu:
   - title:             Life Blog
     url:               /lblog/
   - title:             Tech Blog
-    url:               /tblog/
-  - title:             Resume
-    url:               /resume/  
+    url:               /tblog/  
 # Add links to the footer.
 # Typically you'll want to link to your cookie- or privacy policy (if appliable), etc..
 legal:
@@ -88,7 +86,7 @@ remote_theme: hydecorp/hydejack@v9
 # ----------------------------------------------------------------------------------------
  
 # Sidebar image and theme color of the site.
-accent_image:          /assets/img/sidebar-bg.jpg
+accent_image:          /assets/img/bg.jpg
 accent_color:          rgb(79,177,186)
 
 # This is used for the `theme-color` meta tag,
@@ -173,12 +171,23 @@ kramdown:
 
 # Setting a disqus shortname will enable the comment section on
 # pages with `comments: true` in the front matter.
-# disqus:                <username>
+#  disqus:                aneesh_dua
 
 # Setting a tinyletter username will enable the newsletter subscription box.
 # PRO version only!
 # tinyletter:            <username>
+comments:
+  # 'disqus' or 'utterances' are available
+  provider:            utterances
 
+# You must install utterances github app before use.(https://github.com/apps/utterances)
+# Make sure all variables are set properly. Check below link for detail.
+# https://utteranc.es/
+utterances:
+  repo:                "aneeshdua/blog"
+  issue-term:          "pathname"
+  label:               "comments"
+  theme:               "github-light"
 
 # Hydejack Settings
 # ----------------------------------------------------------------------------------------
