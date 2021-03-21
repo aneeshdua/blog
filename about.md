@@ -19,7 +19,7 @@ redirect_from:
 
 ## Hobbies and Interests
 
-I am an avid FPS gamer. I love playing all kinds but competitive FPS is my thing. I love hacking contests, Jeopardy CTFs. I love zoning out listening to music. My taste is wide in the kind of the music I [enjoy](https://open.spotify.com/user/aneeshdua?si=hoGX-PMzSg6pEBT9UTyQ-Q){:target="_blank"}. Travel when possible, love being close to nature.   
+I love food. I like to try out exotic dishes. Being an amateur cook, I usually go out to feed my cravings.I am an enthusiast FPS gamer. I love playing all kinds of games but competitive FPS is my thing. I love hacking contests, Jeopardy CTFs. I love zoning out listening to music. My taste is wide in the kind of the music I [enjoy](https://open.spotify.com/user/aneeshdua?si=hoGX-PMzSg6pEBT9UTyQ-Q){:target="_blank"}. Travel when possible, love being close to nature.   
 
 ## Contact
 
