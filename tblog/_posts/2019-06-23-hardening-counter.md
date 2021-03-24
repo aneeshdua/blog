@@ -7,7 +7,7 @@ sitemap: false
 hide_last_modified: true
 image:
   path:    /assets/img/hdncntr/1.jpg
-
+comments: true
 ---
 {:.lead}
 Cyber Attacks are exponentially increasing by the day. The omnipresence of Internet enabled devices around us makes such attacks terrorizing for us. Thus, to resist such threats, it is essential to develop mechanisms and protect our devices and networks. There are mainly two ways to go about it, either we build countermeasures against attacks or either we implement hardening of devices and connection methods. How should we go about it?
@@ -49,3 +49,5 @@ Well, I would think of it as an analogy to the Marvel Comics. Hardening is Capta
 * Tony Stark made a super suit to defend the world from outer space threats. He did not make any changes to himself for this, the suit was an outer protective cover as a countermeasure.<br/>
 
 Both of these heroes in cyber security are essential and one can’t really compare. However, it maybe better to have hardened protocols rather countermeasures. Still countermeasures are always going to be exist because when it comes to cyber security, one can’t be 100% sure. It is important to note that the implementation of both affects the quality of their purpose.
+
+Image credit: [Infoguard Cybersecurity](http://www.infoguardsecurity.com/system-hardening-and-cyber-security/){:target="_blank"},[Techhive](https://images.techhive.com/images/article/2015/09/thinkstockphotos-479801072-100611728-large.jpg){:target="_blank"}
