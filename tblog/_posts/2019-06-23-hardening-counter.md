@@ -43,7 +43,7 @@ So….whats the conclusion?
 
 Well, I would think of it as an analogy to the Marvel Comics. Hardening is Captain America and Countermeasures are like Iron Man. Lemme explain.. <br/>
 
-![Full-width image](/assets/img/hdncntr/2.jpg){:.lead width="80" height="50"} 
+![Full-width image](/blog/assets/img/hdncntr/2.jpg){:.lead width="80" height="50"} 
 
 * Captain America was made into a more powerful soldier, hence, if I may, his abilities were hardened. His physique completely changed while his core remained the same, just like hardening of protocols and software architecture.
 * Tony Stark made a super suit to defend the world from outer space threats. He did not make any changes to himself for this, the suit was an outer protective cover as a countermeasure.<br/>
