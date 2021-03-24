@@ -1,10 +1,11 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2021-03-24T12:59:55+05:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">Hacker Monk</title><subtitle>A hacker by instinct and monk by mindset.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2021-03-24T19:37:27+05:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">Hacker Monk</title><subtitle>A hacker by instinct and monk by mindset.
 </subtitle><author><name>Aneesh Dua</name><email>workstuff.dua@gmail.com</email></author><entry><title type="html">Writeup for NC-Bug-Bounty CTF Challenge</title><link href="http://localhost:4000/tblog/2021-03-24-ncbugbounty/" rel="alternate" type="text/html" title="Writeup for NC-Bug-Bounty CTF Challenge" /><published>2021-03-24T00:00:00+05:30</published><updated>2021-03-24T00:00:00+05:30</updated><id>http://localhost:4000/tblog/ncbugbounty</id><content type="html" xml:base="http://localhost:4000/tblog/2021-03-24-ncbugbounty/">&lt;p&gt;I had developed two challenges for Winja CTF 2021, - Secretive Flights and NC-Bug-Bounty. NC-Bug-Bounty was not solved by any participant, so here goes the solution writeup for it.&lt;/p&gt;
+
 &lt;h2 id=&quot;the-landing-page&quot;&gt;The landing page&lt;/h2&gt;
 
 &lt;p&gt;The landing page of the challenge is similiar to any bug bounty’s page. We are given an inscope domain and the story about the login portal being insecure is given to us.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/img/winja/landing-page.png&quot; alt=&quot;Full-width image&quot; class=&quot;lead&quot; width=&quot;80&quot; height=&quot;50&quot; loading=&quot;lazy&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/img/winja/landing-page.png&quot; alt=&quot;Full-width image&quot; class=&quot;lead&quot; width=&quot;80&quot; height=&quot;50&quot; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;first-interns-submission-round-1&quot;&gt;First Intern’s Submission (Round 1)&lt;/h2&gt;
 
@@ -41,7 +42,7 @@
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;p&gt;And it works! Even though you didn’t get to know the secret, you bypassed the second round. Isn’t that what matters? Right?…..Right?&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/img/winja/secrets-meme.gif&quot; alt=&quot;Full-width image&quot; class=&quot;lead&quot; width=&quot;80&quot; height=&quot;10&quot; loading=&quot;lazy&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/img/winja/secrets-meme.gif&quot; alt=&quot;Full-width image&quot; class=&quot;lead&quot; width=&quot;80&quot; height=&quot;10&quot; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;third-interns-submission-round-3&quot;&gt;Third Intern’s Submission (Round 3)&lt;/h2&gt;
 
@@ -101,7 +102,7 @@
 
 &lt;p&gt;There would be many different injections possible for the various rounds. Please, drop in the comments below what you came up with. Also, for people who are wondering if you could use the ASCII values to substitute SQL statements, you can do that in one of the rounds. In other rounds, I had blocked it so as to not make it the god query for the challenge.&lt;/p&gt;
 
-&lt;p&gt;Interpreting the hints correctly and appropriate google search about SQL Injection Payloads would have helped one to solve the challenge all the way through.You can find the source code on my &lt;a href=&quot;https://github.com/aneeshdua/Winja-CTF-Challenges&quot; target=&quot;_blank&quot;&gt;Github&lt;/a&gt;. Join the discord &lt;a href=&quot;https://discord.com/invite/AawhaQy&quot; target=&quot;_blank&quot;&gt;server&lt;/a&gt; if you haven’t already. You can ping any of the mods for challenge related questions and also if you want to join like minded people. If you want to dm me, feel free to do so. Add me in discord(ghost#3538). Peace✌.&lt;/p&gt;</content><author><name>Aneesh Dua</name><email>workstuff.dua@gmail.com</email></author><category term="tblog" /><summary type="html">I had developed two challenges for Winja CTF 2021, - Secretive Flights and NC-Bug-Bounty. NC-Bug-Bounty was not solved by any participant, so here goes the solution writeup for it. The landing page</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/winja/winja-logo.png" /><media:content medium="image" url="http://localhost:4000/assets/img/winja/winja-logo.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Deciphering long lasting relationships</title><link href="http://localhost:4000/lblog/2021-03-18-whovswho/" rel="alternate" type="text/html" title="Deciphering long lasting relationships" /><published>2021-03-18T00:00:00+05:30</published><updated>2021-03-18T00:00:00+05:30</updated><id>http://localhost:4000/lblog/whovswho</id><content type="html" xml:base="http://localhost:4000/lblog/2021-03-18-whovswho/">&lt;p&gt;The above quote might seem so simple and many of might already make out what I am about to talk about. Enough intro, lets talk.&lt;/p&gt;
+&lt;p&gt;Interpreting the hints correctly and appropriate google search about SQL Injection Payloads would have helped one to solve the challenge all the way through.You can find the source code on my &lt;a href=&quot;https://github.com/aneeshdua/Winja-CTF-Challenges&quot; target=&quot;_blank&quot;&gt;Github&lt;/a&gt;. Join the discord &lt;a href=&quot;https://discord.com/invite/AawhaQy&quot; target=&quot;_blank&quot;&gt;server&lt;/a&gt; if you haven’t already. You can ping any of the mods for challenge related questions and also if you want to join like minded people. If you want to dm me, feel free to do so. Add me in discord(ghost#3538). Peace✌.&lt;/p&gt;</content><author><name>Aneesh Dua</name><email>workstuff.dua@gmail.com</email></author><category term="tblog" /><summary type="html">I had developed two challenges for Winja CTF 2021, - Secretive Flights and NC-Bug-Bounty. NC-Bug-Bounty was not solved by any participant, so here goes the solution writeup for it.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/winja/winja-logo.png" /><media:content medium="image" url="http://localhost:4000/assets/img/winja/winja-logo.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Deciphering long lasting relationships</title><link href="http://localhost:4000/lblog/2021-03-18-whovswho/" rel="alternate" type="text/html" title="Deciphering long lasting relationships" /><published>2021-03-18T00:00:00+05:30</published><updated>2021-03-18T00:00:00+05:30</updated><id>http://localhost:4000/lblog/whovswho</id><content type="html" xml:base="http://localhost:4000/lblog/2021-03-18-whovswho/">&lt;p&gt;The above quote might seem so simple and many of might already make out what I am about to talk about. Enough intro, lets talk.&lt;/p&gt;
 
 &lt;h2 id=&quot;the-context-the-big-picture&quot;&gt;The context; the big picture&lt;/h2&gt;
 
@@ -167,7 +168,7 @@ There are mainly four basic types of countermeasures:&lt;/p&gt;
 
 &lt;p&gt;Well, I would think of it as an analogy to the Marvel Comics. Hardening is Captain America and Countermeasures are like Iron Man. Lemme explain.. &lt;br /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/img/hdncntr/2.jpg&quot; alt=&quot;Full-width image&quot; class=&quot;lead&quot; width=&quot;80&quot; height=&quot;50&quot; loading=&quot;lazy&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/img/hdncntr/2.jpg&quot; alt=&quot;Full-width image&quot; class=&quot;lead&quot; width=&quot;80&quot; height=&quot;50&quot; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Captain America was made into a more powerful soldier, hence, if I may, his abilities were hardened. His physique completely changed while his core remained the same, just like hardening of protocols and software architecture.&lt;/li&gt;
@@ -185,7 +186,7 @@ E-commerce websites are the most likely targets of denial-of-service attacks. Th
 Besides keeping your anti-virus software and security patches up-to-date, you should also be monitoring your traffic reports to protect against a denial-of-service attack. A sudden increase in traffic or other strange traffic patterns could be an early sign of this type of attack.
 A distributed denial of service attack (DDoS) is a special type of denial of service attack. The principle is the same, but the malicious traffic is generated from multiple sources — although orchestrated from one central point. The fact that the traffic sources are distributed — often throughout the world — makes a DDoS attack much harder to block than one originating from a single IP address.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/img/ddos/2.png&quot; alt=&quot;Full-width image&quot; class=&quot;lead&quot; width=&quot;800&quot; height=&quot;100&quot; loading=&quot;lazy&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/img/ddos/2.png&quot; alt=&quot;Full-width image&quot; class=&quot;lead&quot; width=&quot;800&quot; height=&quot;100&quot; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;motivation-behind-ddos-attacks&quot;&gt;Motivation behind DDoS attacks&lt;/h2&gt;
 
@@ -278,7 +279,7 @@ Phishers always take advantage of human nature that generally ignores critical w
 
 &lt;h2 id=&quot;what-damage-can-they-do&quot;&gt;What damage can they do?&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/img/phishing/1.jpg&quot; alt=&quot;Full-width image&quot; class=&quot;lead&quot; width=&quot;80&quot; height=&quot;50&quot; loading=&quot;lazy&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/img/phishing/1.jpg&quot; alt=&quot;Full-width image&quot; class=&quot;lead&quot; width=&quot;80&quot; height=&quot;50&quot; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Theft of login credentials: Phisher steals login credentials of online services like eBay, Amazon and Gmail from the user using spoofed email as warning message to change password and provided hyperlink.&lt;/li&gt;
@@ -307,11 +308,11 @@ Phishers always take advantage of human nature that generally ignores critical w
 &lt;p&gt;After getting the required information, the phisher now removes all the evidences, i.e., the false websites accounts. It is also observed that they track the degree of success of their attack for reﬁning future attacks.&lt;/p&gt;
 
 &lt;h2 id=&quot;how-to-stay-safe&quot;&gt;How to stay safe?&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&quot;/assets/img/phishing/3.png&quot; alt=&quot;Full-width image&quot; class=&quot;lead&quot; width=&quot;80&quot; height=&quot;50&quot; loading=&quot;lazy&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/img/phishing/3.png&quot; alt=&quot;Full-width image&quot; class=&quot;lead&quot; width=&quot;80&quot; height=&quot;50&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Always pay attention to the sender email and the URL of the links in the email. These provide you with enough indications of the authenticity of the email.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/img/phishing/4.png&quot; alt=&quot;Full-width image&quot; class=&quot;lead&quot; width=&quot;80&quot; height=&quot;50&quot; loading=&quot;lazy&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/img/phishing/4.png&quot; alt=&quot;Full-width image&quot; class=&quot;lead&quot; width=&quot;80&quot; height=&quot;50&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;This webpage looks exactly the same as of the real Gmail sign in page. But as you can observe that the URL is the not the actual one. So look closely!! Hackers can easily replicate the websites so you should check the URL always.
 One can also opt for extensions like the PhishDetector for Google Chrome in order to stay safe from all kinds of phishing.

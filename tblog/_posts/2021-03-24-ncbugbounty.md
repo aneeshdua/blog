@@ -11,11 +11,14 @@ comments: true
 ---
 
 I had developed two challenges for Winja CTF 2021, - Secretive Flights and NC-Bug-Bounty. NC-Bug-Bounty was not solved by any participant, so here goes the solution writeup for it.
+
+
+
 ## The landing page
 
 The landing page of the challenge is similiar to any bug bounty's page. We are given an inscope domain and the story about the login portal being insecure is given to us.
 
-![Full-width image](/assets/img/winja/landing-page.png){:.lead width="80" height="50" loading="lazy"} 
+![Full-width image](/assets/img/winja/landing-page.png){:.lead width="80" height="50"} 
 
 ## First Intern's Submission (Round 1)
 
@@ -54,7 +57,7 @@ So we understand that there is a secret table on the same database which we need
 ```
 And it works! Even though you didn't get to know the secret, you bypassed the second round. Isn't that what matters? Right?.....Right?
 
-![Full-width image](/assets/img/winja/secrets-meme.gif){:.lead width="80" height="10" loading="lazy"} 
+![Full-width image](/assets/img/winja/secrets-meme.gif){:.lead width="80" height="10"} 
 
 ## Third Intern's Submission (Round 3)
 
