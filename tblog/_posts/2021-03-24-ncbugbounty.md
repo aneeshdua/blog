@@ -18,7 +18,7 @@ I had developed two challenges for Winja CTF 2021, - Secretive Flights and NC-Bu
 
 The landing page of the challenge is similiar to any bug bounty's page. We are given an inscope domain and the story about the login portal being insecure is given to us.
 
-![Full-width image](/assets/img/winja/landing-page.png){:.lead width="80" height="50"} 
+![Full-width image](./assets/img/winja/landing-page.png){:.lead width="80" height="50"} 
 
 ## First Intern's Submission (Round 1)
 
@@ -57,7 +57,7 @@ So we understand that there is a secret table on the same database which we need
 ```
 And it works! Even though you didn't get to know the secret, you bypassed the second round. Isn't that what matters? Right?.....Right?
 
-![Full-width image](/assets/img/winja/secrets-meme.gif){:.lead width="80" height="10"} 
+![Full-width image](/blog/assets/img/winja/secrets-meme.gif){:.lead width="80" height="10"} 
 
 ## Third Intern's Submission (Round 3)
 

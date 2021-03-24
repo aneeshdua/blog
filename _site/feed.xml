@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2021-03-25T00:34:40+05:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">Hacker Monk</title><subtitle>A hacker by instinct and monk by mindset.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2021-03-25T01:08:41+05:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">Hacker Monk</title><subtitle>A hacker by instinct and monk by mindset.
 </subtitle><author><name>Aneesh Dua</name><email>workstuff.dua@gmail.com</email></author><entry><title type="html">Writeup for NC-Bug-Bounty CTF Challenge</title><link href="http://localhost:4000/tblog/2021-03-24-ncbugbounty/" rel="alternate" type="text/html" title="Writeup for NC-Bug-Bounty CTF Challenge" /><published>2021-03-24T00:00:00+05:30</published><updated>2021-03-24T00:00:00+05:30</updated><id>http://localhost:4000/tblog/ncbugbounty</id><content type="html" xml:base="http://localhost:4000/tblog/2021-03-24-ncbugbounty/">&lt;p&gt;I had developed two challenges for Winja CTF 2021, - Secretive Flights and NC-Bug-Bounty. NC-Bug-Bounty was not solved by any participant, so here goes the solution writeup for it.&lt;/p&gt;
 
 &lt;h2 id=&quot;the-landing-page&quot;&gt;The landing page&lt;/h2&gt;
 
 &lt;p&gt;The landing page of the challenge is similiar to any bug bounty’s page. We are given an inscope domain and the story about the login portal being insecure is given to us.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/img/winja/landing-page.png&quot; alt=&quot;Full-width image&quot; class=&quot;lead&quot; width=&quot;80&quot; height=&quot;50&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;./assets/img/winja/landing-page.png&quot; alt=&quot;Full-width image&quot; class=&quot;lead&quot; width=&quot;80&quot; height=&quot;50&quot; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;first-interns-submission-round-1&quot;&gt;First Intern’s Submission (Round 1)&lt;/h2&gt;
 
@@ -42,7 +42,7 @@
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;p&gt;And it works! Even though you didn’t get to know the secret, you bypassed the second round. Isn’t that what matters? Right?…..Right?&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/img/winja/secrets-meme.gif&quot; alt=&quot;Full-width image&quot; class=&quot;lead&quot; width=&quot;80&quot; height=&quot;10&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/blog/assets/img/winja/secrets-meme.gif&quot; alt=&quot;Full-width image&quot; class=&quot;lead&quot; width=&quot;80&quot; height=&quot;10&quot; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;third-interns-submission-round-3&quot;&gt;Third Intern’s Submission (Round 3)&lt;/h2&gt;
 
