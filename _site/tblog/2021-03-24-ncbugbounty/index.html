@@ -10,7 +10,7 @@
                 /\___/                \ \____/
                 \/__/                  \/___/
 
-Powered by Hydejack v9.1.2 <https://hydejack.com/>
+Powered by Hydejack v9.1.4 <https://hydejack.com/>
 -->
 
 
@@ -49,7 +49,7 @@ Powered by Hydejack v9.1.2 <https://hydejack.com/>
 <meta property="twitter:image" content="http://localhost:4000/assets/img/winja/winja-logo.png" />
 <meta property="twitter:title" content="Writeup for NC-Bug-Bounty CTF Challenge" />
 <script type="application/ld+json">
-{"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/img/hm_white_medium.png"},"name":"Aneesh Dua"},"headline":"Writeup for NC-Bug-Bounty CTF Challenge","description":"Winja CTF 2021 was held on 6th March,2021 as part of NullCon 2021. I was a part of the dev team. Here is the writeup for the unsolved hard difficulty challenge NC-Bug-Bounty that I developed.","dateModified":"2021-03-24T00:00:00+05:30","url":"http://localhost:4000/tblog/2021-03-24-ncbugbounty/","datePublished":"2021-03-24T00:00:00+05:30","@type":"BlogPosting","image":"http://localhost:4000/assets/img/winja/winja-logo.png","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/tblog/2021-03-24-ncbugbounty/"},"author":{"@type":"Person","name":"Aneesh Dua"},"@context":"https://schema.org"}</script>
+{"@type":"BlogPosting","headline":"Writeup for NC-Bug-Bounty CTF Challenge","dateModified":"2021-03-24T00:00:00+05:30","datePublished":"2021-03-24T00:00:00+05:30","image":"http://localhost:4000/assets/img/winja/winja-logo.png","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/img/hm_white_medium.png"},"name":"Aneesh Dua"},"mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/tblog/2021-03-24-ncbugbounty/"},"url":"http://localhost:4000/tblog/2021-03-24-ncbugbounty/","author":{"@type":"Person","name":"Aneesh Dua"},"description":"Winja CTF 2021 was held on 6th March,2021 as part of NullCon 2021. I was a part of the dev team. Here is the writeup for the unsolved hard difficulty challenge NC-Bug-Bounty that I developed.","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -73,10 +73,10 @@ Powered by Hydejack v9.1.2 <https://hydejack.com/>
   <meta name="theme-color" content="rgb(8,46,57)">
 
 
-<meta name="generator" content="Hydejack v9.1.2" />
+<meta name="generator" content="Hydejack v9.1.4" />
 
 
-<link rel="alternate" href="http://localhost:4000/tblog/2019-05-13-phishing/" hreflang="en">
+<link rel="alternate" href="http://localhost:4000/tblog/2021-03-24-ncbugbounty/" hreflang="en">
 
 <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Hacker Monk" />
 
@@ -86,10 +86,7 @@ Powered by Hydejack v9.1.2 <https://hydejack.com/>
 
 <link rel="manifest" href="/assets/site.webmanifest">
 
-
-  <link rel="dns-prefetch" href="https://fonts.googleapis.com">
-  <link rel="dns-prefetch" href="https://fonts.gstatic.com">
-
+<link rel="dns-prefetch" href="https://fonts.googleapis.com"><link rel="dns-prefetch" href="https://fonts.gstatic.com">
 
 
 
@@ -114,7 +111,7 @@ Powered by Hydejack v9.1.2 <https://hydejack.com/>
   w._search = {
     DATA_URL: '/assets/sitedata.json?no-cache',
     STORAGE_KEY: 'mini-search/',
-    INDEX_KEY: 'index--2021-03-25T01:08:41+05:30',
+    INDEX_KEY: 'index--2021-04-12T00:29:54+05:30',
   };
   w._clapButton = true;
 }(window);</script>
@@ -130,7 +127,7 @@ Powered by Hydejack v9.1.2 <https://hydejack.com/>
 
 
 
-<link rel="stylesheet" href="/assets/css/hydejack-9.1.2.css" id="_stylePreload">
+<link rel="stylesheet" href="/assets/css/hydejack-9.1.4.css" id="_stylePreload">
 <link rel="stylesheet" href="/assets/icomoon/style.css" id="_iconsPreload">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:700%7CNoto+Sans:400,400i,700,700i&display=swap" id="_fontsPreload">
 
@@ -343,7 +340,7 @@ Left here for reference, feel free to delete.
 
 <p>The landing page of the challenge is similiar to any bug bounty’s page. We are given an inscope domain and the story about the login portal being insecure is given to us.</p>
 
-<p><img src="./assets/img/winja/landing-page.png" alt="Full-width image" class="lead" width="80" height="50" /></p>
+<p><img src="/blog/assets/img/winja/landing-page.png" alt="Full-width image" class="lead" width="80" height="50" /></p>
 
 <h2 id="first-interns-submission-round-1">First Intern’s Submission (Round 1)</h2>
 
@@ -448,6 +445,7 @@ Left here for reference, feel free to delete.
 
 
   <clap-button class="mb6" ></clap-button>
+  
   
     <p class="message centered border-radius" >
       <span style="display:block;margin-bottom:.5rem;">This is a preview of <a href="https://getclaps.app">Clap Button</a>, a new feedback and analytics tools for Hydejack, built by yours truly.</span>
@@ -668,7 +666,7 @@ Left here for reference, feel free to delete.
     
 
 
-  <aside class="related mb4" role="complementary">  <h2 class="hr-bottom">Related Posts</h2>  <ul class="related-posts">                  <li class="h4">  <a href="/lblog/2021-03-18-whovswho/" class="flip-title"><span>Deciphering long lasting relationships</span></a>  <time class="faded fine" datetime="2021-03-18T00:00:00+05:30">18 Mar 2021</time></li>                        <li class="h4">  <a href="/tblog/2019-06-23-hardening-counter/" class="flip-title"><span>Hardening VS Countermeasures for Cyber Security</span></a>  <time class="faded fine" datetime="2019-06-23T00:00:00+05:30">23 Jun 2019</time></li>                        <li class="h4">  <a href="/tblog/2019-05-18-ddos/" class="flip-title"><span>DDoS-the Immortal hacks of the Internet</span></a>  <time class="faded fine" datetime="2019-05-18T00:00:00+05:30">18 May 2019</time></li>            </ul></aside>
+  <aside class="related mb4" role="complementary">  <h2 class="hr-bottom">Related Posts</h2>  <ul class="related-posts">                  <li class="h4">  <a href="/lblog/2021-04-06-mandm/" class="flip-title"><span>The M&M of spiritual life</span></a>  <time class="faded fine" datetime="2021-04-06T00:00:00+05:30">06 Apr 2021</time></li>                        <li class="h4">  <a href="/lblog/2021-03-18-whovswho/" class="flip-title"><span>Deciphering long lasting relationships</span></a>  <time class="faded fine" datetime="2021-03-18T00:00:00+05:30">18 Mar 2021</time></li>                        <li class="h4">  <a href="/tblog/2019-06-23-hardening-counter/" class="flip-title"><span>Hardening VS Countermeasures for Cyber Security</span></a>  <time class="faded fine" datetime="2019-06-23T00:00:00+05:30">23 Jun 2019</time></li>            </ul></aside>
 
   
 
@@ -724,7 +722,7 @@ Left here for reference, feel free to delete.
     
     </small></nav>
   
-    <p><small>Powered by <a class="external" href="https://hydejack.com/">Hydejack</a> v<span id="_version">9.1.2</span></small></p>
+    <p><small>Powered by <a class="external" href="https://hydejack.com/">Hydejack</a> v<span id="_version">9.1.4</span></small></p>
   <hr class="sr-only"/>
 </footer>
 
@@ -975,8 +973,8 @@ Left here for reference, feel free to delete.
   <!--[if gt IE 10]><!---->
   <script nomodule>!function(){var t,n=document.createElement("script");!("noModule"in n)&&"onbeforeload"in n&&(t=!1,document.addEventListener("beforeload",function(e){if(e.target===n)t=!0;else if(!e.target.hasAttribute("nomodule")||!t)return;e.preventDefault()},!0),n.type="module",n.src=".",document.head.appendChild(n),n.remove())}();
 </script>
-  <script src="/assets/js/hydejack-9.1.2.js" type="module"></script>
-  <script src="/assets/js/LEGACY-hydejack-9.1.2.js" nomodule defer></script>
+  <script src="/assets/js/hydejack-9.1.4.js" type="module"></script>
+  <script src="/assets/js/LEGACY-hydejack-9.1.4.js" nomodule defer></script>
   
 
   
