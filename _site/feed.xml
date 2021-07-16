@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2021-07-16T19:36:42+05:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">Hacker Monk</title><subtitle>A hacker by instinct and monk by mindset.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2021-07-16T21:53:26+05:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">Hacker Monk</title><subtitle>A hacker by instinct and monk by mindset.
 </subtitle><author><name>Aneesh Dua</name><email>workstuff.dua@gmail.com</email></author><entry><title type="html">Everyone is hacked</title><link href="http://localhost:4000/tblog/2021-07-16-everyone-is-hacked/" rel="alternate" type="text/html" title="Everyone is hacked" /><published>2021-07-16T00:00:00+05:30</published><updated>2021-07-16T00:00:00+05:30</updated><id>http://localhost:4000/tblog/everyone-is-hacked</id><content type="html" xml:base="http://localhost:4000/tblog/2021-07-16-everyone-is-hacked/">&lt;p class=&quot;lead&quot;&gt;We interact with social media and various online services on a daily basis. People are getting scammed left and right. Data breach occurrences have skyrocketed over the past few years. Chances are, you may have already been hacked, atleast once.&lt;/p&gt;
 
 &lt;h2 id=&quot;your-digital-footprint&quot;&gt;Your Digital Footprint&lt;/h2&gt;
@@ -14,7 +14,7 @@ When you are shopping on an e-commerce website, something you buy is information
 &lt;br /&gt;&lt;br /&gt;
 
 &lt;p align=&quot;center&quot;&gt;
-  &lt;img src=&quot;/blog//assets/img/hacked/hacked_meme.jpg&quot; alt=&quot;drawing&quot; style=&quot;width:500px;&quot; /&gt;
+  &lt;img src=&quot;/blog/assets/img/hacked/hacked_meme.jpg&quot; alt=&quot;drawing&quot; style=&quot;width:500px;&quot; /&gt;
 &lt;/p&gt;
 
 &lt;/div&gt;

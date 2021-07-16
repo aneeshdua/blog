@@ -28,7 +28,7 @@ When you are shopping on an e-commerce website, something you buy is information
 <br/><br/>
 
 <p align="center">
-  <img src="/blog//assets/img/hacked/hacked_meme.jpg" alt="drawing" style="width:500px;"/>
+  <img src="/blog/assets/img/hacked/hacked_meme.jpg" alt="drawing" style="width:500px;"/>
 </p>
 
 </div>
