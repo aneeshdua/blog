@@ -18,12 +18,15 @@ We interact with social media and various online services on a daily basis. Peop
 ## Your Digital Footprint
 <div style="text-align: justify">
 All of our daily and regular tasks are online interactions. From sending important work communications to buying grocery and apparel, everything is available online. And with the virus impacting our lives immensely, we prefer online methods. Our entertainment is also online based, streaming services like Spotify, Youtube, OTT Platforms etc. Our social life has already been online for about a decade now. Rather, the question is what do we NOT do on the internet these days. Whatever you do leaves a "digital" footprint. Let me explain.
+</div>
 
 <p align="center">
-  <img src="/blog//assets/img/hacked/hacked_2.jpg" alt="drawing" style="width:500px;"/>
+  <img src="/blog/assets/img/hacked/hacked_2.jpg" alt="drawing" style="width:500px;"/>
 </p>
 
+<div style="text-align: justify">
 When you are shopping on an e-commerce website, something you buy is information for product companies, something you even put on your wishlist is also important data. This gives them an idea about what you use in your life and also what you even wish to have. And with the wide category of items online, over a period of time, they might know what you like better than even your own family (I am not joking). What posts you like on social media is data, what hashtags and people you follow is data about you. From the political leaders and influencers you follow and like, it implies the views they represent is what you agree with as well. Many of you might not know, wherever you go (if you don't have your settings right), your location/travel activity is logged in your phone. You go out for a family dinner, you post a picture on your social media timeline. Now, if you add a location while posting your picture, that also is information. This information helps one know about all your favourite restaurants. When you login into your Google account in your phone or browser, your search history is associated with your account and also stored. Suppose you search for a car repair shop near you, it implies your car requires repair. This information is valuable as well. The repair shop owners can use this info to find potential clients like you and offer you their services. In one perspective you are getting the services you are looking for but on the other hand your life is not private anymore. Online surveys are no different. Many corporate giants host surveys with rewards (even real money) for people to better get to know the market, its all about the information. It is all fine as long as it is anonymous, but when you get targeted marketing advertisements meaning whatever you do online gets associated with your online identity, people get to know more about you than you want them to know. In other words, privacy goes boom.
+</div>
 
 <br/><br/>
 
@@ -31,7 +34,7 @@ When you are shopping on an e-commerce website, something you buy is information
   <img src="/blog/assets/img/hacked/hacked_meme.jpg" alt="drawing" style="width:500px;"/>
 </p>
 
-</div>
+
 
 ## Digital Scams
 
