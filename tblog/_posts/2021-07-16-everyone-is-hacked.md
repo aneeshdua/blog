@@ -2,7 +2,7 @@
 layout: post
 title: Everyone is hacked
 description: >
-  We interact with social media and various online services on a daily basis. People are getting scammed left and right. Data breach occurrences have skyrocketed over the past few years. Chances are, you may have already been hacked, atleast once.
+  With everything and everyone having immense online prescence, we need to address the elephant in the room, the security of an individual's data.
 sitemap: false
 hide_last_modified: true
 image:
@@ -13,7 +13,6 @@ comments: true
 
 {:.lead}
 We interact with social media and various online services on a daily basis. People are getting scammed left and right. Data breach occurrences have skyrocketed over the past few years. Chances are, you may have already been hacked, atleast once. 
-
 
 ## Your Digital Footprint
 <div style="text-align: justify">
