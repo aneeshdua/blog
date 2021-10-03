@@ -13,7 +13,7 @@ redirect_from:
 <!--author-->
 
 ## Work
- * I am currently working as a Data Engineering Intern at Novartis Business Services, India.<br/>
+ * I am currently working as a Data Engineering Associate at Novartis Business Services, India.<br/>
  * Previously worked as a Summer Research Fellow at the Institute of Development and Research in Development Technology(in affiliation with Indian Academy of Sciences). I [published](https://ieeexplore.ieee.org/document/9036313){:target="_blank"} my work at the IEEE ISCON Conference,2019.<br/>
  * Volunteered as a CTF contest devloper and organiser for the [Winja CTF](https://www.winja.site/past-events/winja-ctf-06march2020/){:target="_blank"} at the [Nullcon 2021 Conference](https://nullcon.net/website/goa-2021/training.php){:target="_blank"}. I developed Web and Crypto challenges for the latter.
 

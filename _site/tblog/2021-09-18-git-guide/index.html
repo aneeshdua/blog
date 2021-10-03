@@ -1,0 +1,1422 @@
+<!DOCTYPE html>
+<html lang="en"><!--
+ __  __                __                                     __
+/\ \/\ \              /\ \             __                    /\ \
+\ \ \_\ \   __  __    \_\ \      __   /\_\      __       ___ \ \ \/'\
+ \ \  _  \ /\ \/\ \   /'_` \   /'__`\ \/\ \   /'__`\    /'___\\ \ , <
+  \ \ \ \ \\ \ \_\ \ /\ \L\ \ /\  __/  \ \ \ /\ \L\.\_ /\ \__/ \ \ \\`\
+   \ \_\ \_\\/`____ \\ \___,_\\ \____\ _\ \ \\ \__/.\_\\ \____\ \ \_\ \_\
+    \/_/\/_/ `/___/> \\/__,_ / \/____//\ \_\ \\/__/\/_/ \/____/  \/_/\/_/
+                /\___/                \ \____/
+                \/__/                  \/___/
+
+Powered by Hydejack v9.1.4 <https://hydejack.com/>
+-->
+
+
+
+
+
+
+
+<head>
+  
+
+
+
+
+  <meta name="robots" content="noindex">
+
+
+
+  
+    
+<!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>A Definitive guide to Git | Hacker Monk</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="A Definitive guide to Git" />
+<meta name="author" content="Aneesh Dua" />
+<meta property="og:locale" content="en" />
+<meta name="description" content="Git is the most commonly required skill for a developer. I have compiled various git resources and created a guide for beginners as well as intermediate developers." />
+<meta property="og:description" content="Git is the most commonly required skill for a developer. I have compiled various git resources and created a guide for beginners as well as intermediate developers." />
+<link rel="canonical" href="http://localhost:4000/tblog/2021-09-18-git-guide/" />
+<meta property="og:url" content="http://localhost:4000/tblog/2021-09-18-git-guide/" />
+<meta property="og:site_name" content="Hacker Monk" />
+<meta property="og:image" content="http://localhost:4000/assets/img/git/git-front.png" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2021-09-18T00:00:00+05:30" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="http://localhost:4000/assets/img/git/git-front.png" />
+<meta property="twitter:title" content="A Definitive guide to Git" />
+<script type="application/ld+json">
+{"image":"http://localhost:4000/assets/img/git/git-front.png","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/tblog/2021-09-18-git-guide/"},"@type":"BlogPosting","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/img/hm_white_medium.png"},"name":"Aneesh Dua"},"description":"Git is the most commonly required skill for a developer. I have compiled various git resources and created a guide for beginners as well as intermediate developers.","url":"http://localhost:4000/tblog/2021-09-18-git-guide/","author":{"@type":"Person","name":"Aneesh Dua"},"headline":"A Definitive guide to Git","dateModified":"2021-09-18T00:00:00+05:30","datePublished":"2021-09-18T00:00:00+05:30","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+  
+
+  
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+
+<meta name="mobile-web-app-capable" content="yes">
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Hacker Monk">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+<meta name="application-name" content="Hacker Monk">
+
+
+  <meta name="theme-color" content="rgb(8,46,57)">
+
+
+<meta name="generator" content="Hydejack v9.1.4" />
+
+
+<link rel="alternate" href="http://localhost:4000/tblog/2021-09-18-git-guide/" hreflang="en">
+
+<link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Hacker Monk" />
+
+
+<link rel="shortcut icon"    href="/assets/icons/favicon.ico">
+<link rel="apple-touch-icon" href="/assets/icons/icon-192x192.png">
+
+<link rel="manifest" href="/assets/site.webmanifest">
+
+<link rel="dns-prefetch" href="https://fonts.googleapis.com"><link rel="dns-prefetch" href="https://fonts.gstatic.com">
+
+
+
+<link rel="preload" href="/assets/img/swipe.svg" as="image" id="_hrefSwipeSVG">
+
+
+
+
+
+
+<script>!function(r,c){"use strict";function a(e,t,n,o){e.addEventListener?e.addEventListener(t,n,o):e.attachEvent?e.attachEvent("on"+t,n):e["on"+t]=n}r.loadJS=function(e,t){var n=c.createElement("script");n.src=e,t&&a(n,"load",t,{once:!0});t=c.scripts[0];return t.parentNode.insertBefore(n,t),n},r._loaded=!1,r.loadJSDeferred=function(e,t){var n=c.createElement("script");function o(){r._loaded=!0,t&&a(n,"load",t,{once:!0});var e=c.scripts[0];e.parentNode.insertBefore(n,e)}return n.src=e,r._loaded?o():a(r,"load",o,{once:!0}),n},r.setRel=r.setRelStylesheet=function(e){a(c.getElementById(e),"load",function(){this.rel="stylesheet"},{once:!0})}}(window,document);
+!function(a){"use strict";var b=function(b,c,d){function e(a){return h.body?a():void setTimeout(function(){e(a)})}function f(){i.addEventListener&&i.removeEventListener("load",f),i.media=d||"all"}var g,h=a.document,i=h.createElement("link");if(c)g=c;else{var j=(h.body||h.getElementsByTagName("head")[0]).childNodes;g=j[j.length-1]}var k=h.styleSheets;i.rel="stylesheet",i.href=b,i.media="only x",e(function(){g.parentNode.insertBefore(i,c?g:g.nextSibling)});var l=function(a){for(var b=i.href,c=k.length;c--;)if(k[c].href===b)return a();setTimeout(function(){l(a)})};return i.addEventListener&&i.addEventListener("load",f),i.onloadcssdefined=l,l(f),i};"undefined"!=typeof exports?exports.loadCSS=b:a.loadCSS=b}("undefined"!=typeof global?global:this);
+!function(a){if(a.loadCSS){var b=loadCSS.relpreload={};if(b.support=function(){try{return a.document.createElement("link").relList.supports("preload")}catch(b){return!1}},b.poly=function(){for(var b=a.document.getElementsByTagName("link"),c=0;c<b.length;c++){var d=b[c];"preload"===d.rel&&"style"===d.getAttribute("as")&&(a.loadCSS(d.href,d,d.getAttribute("media")),d.rel=null)}},!b.support()){b.poly();var c=a.setInterval(b.poly,300);a.addEventListener&&a.addEventListener("load",function(){b.poly(),a.clearInterval(c)}),a.attachEvent&&a.attachEvent("onload",function(){a.clearInterval(c)})}}}(this);
+!function(w) {
+  w._baseURL = '/';
+  w._publicPath = '/assets/js/';
+  w._noPushState = false;
+  w._noDrawer = false;
+  w._noNavbar = false;
+  w._noToc = false;
+  w._noSearch = false;
+  w._search = {
+    DATA_URL: '/assets/sitedata.json?no-cache',
+    STORAGE_KEY: 'mini-search/',
+    INDEX_KEY: 'index--2021-10-03T16:18:08+05:30',
+  };
+  w._clapButton = true;
+}(window);</script>
+
+
+<script async src="/assets/bower_components/MathJax/es5/tex-mml-chtml.js" id="_MathJax"></script>
+
+
+<!--[if gt IE 8]><!---->
+
+  
+
+
+
+
+<link rel="stylesheet" href="/assets/css/hydejack-9.1.4.css" id="_stylePreload">
+<link rel="stylesheet" href="/assets/icomoon/style.css" id="_iconsPreload">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:700%7CNoto+Sans:400,400i,700,700i&display=swap" id="_fontsPreload">
+
+
+
+  <style id="_pageStyle">
+
+html{--accent-color: rgb(79,177,186);--accent-color-faded: rgba(79,177,186,0.5);--accent-color-highlight: rgba(79,177,186,0.1);--accent-color-darkened: #409ba3;--theme-color: rgb(8,46,57)}
+
+</style>
+
+
+<!--<![endif]-->
+
+
+<!--
+Code used for embedding Gumroad on the Hydejack Site. 
+Left here for reference, feel free to delete.
+-->
+<link rel="dns-prefetch" href="https://assets.gumroad.com">
+<script>window.GET_CLAPS_API = 'https://worker.getclaps.dev'</script>
+<script type="module">
+  const ppiData = window._ppiData = fetch('https://hydejack-ppi.qwtel.workers.dev', { mode: 'cors'}).then(res => res.json()).catch(() => ({}));
+  const promisify = f => x => new Promise(r => f(x).addEventListener('load', r));
+  const loadJS = promisify(window.loadJS);
+  {
+    let p;
+    document.querySelector('hy-push-state').addEventListener('load', () => {
+      const io = new IntersectionObserver(async (entries) => {
+        if (entries.some(x => x.isIntersecting)) {
+          p = p || loadJS('https://gumroad.com/js/gumroad-embed.js');
+          const [{ code }] = await Promise.all([ppiData, p]);
+          document.querySelectorAll('.gumroad-product-embed').forEach(el => { 
+            if (!el.dataset.gumroadParams) {
+              el.dataset.gumroadParams = 'offer_code=' + (code || 'qr0tw8m');
+            }
+          });
+          if (!window.GumroadEmbed) {
+            await new Promise(function check1(res) {
+              if ('createGumroadEmbed' in window) res(window.createGumroadEmbed());
+              else setTimeout(() => check1(res), 200);
+            });
+          }
+          await new Promise(function check2(res) {
+            if ('GumroadEmbed' in window) res(GumroadEmbed.reload());
+            else setTimeout(() => check2(res), 200);
+          });
+        }
+      }, { rootMargin: '1440px' });
+      document.querySelectorAll('.gumroad-product-embed').forEach(el => io.observe(el));
+    });
+  }
+  {
+    let p;
+    document.querySelector('hy-push-state').addEventListener('load', () => {
+      const io = new IntersectionObserver(async (entries) => {
+        if (entries.some(x => x.isIntersecting)) {
+          p = p || loadJS('https://gumroad.com/js/gumroad.js');
+          const [{ code }] = await Promise.all([ppiData, p]);
+          if (code) {
+            document.querySelectorAll('.gumroad-button').forEach(el => { 
+              if (!el.href.endsWith(code)) {
+                el.href = el.href + '/' + (code || 'qr0tw8m');
+              }
+            });
+          }
+          if (!window.GumroadOverlay) {
+            await new Promise(function check(res) {
+              if ('createGumroadOverlay' in window) res(window.createGumroadOverlay());
+              else setTimeout(() => check(res), 200);
+            });
+          }
+        }
+      }, { rootMargin: '300px' });
+      document.querySelectorAll('.gumroad-button').forEach(el => io.observe(el));
+    });
+  }
+</script>
+
+
+</head>
+
+<body class="no-break-layout">
+  
+
+
+<hy-push-state
+  id="_pushState"
+  replace-selector="#_main"
+  link-selector="a[href]:not([href^='/assets/']):not(.external):not(.no-push-state)"
+  script-selector="script"
+  duration="500"
+  hashchange
+>
+  
+  
+  <div id="_navbar" class="navbar fixed-top">
+  <div class="content">
+    <span class="sr-only">Jump to:</span>
+    <div class="nav-btn-bar">
+      <a id="_menu" class="nav-btn no-hover" href="#_drawer--opened">
+        <span class="sr-only">Navigation</span>
+        <span class="icon-menu"></span>
+      </a>
+      <div class="nav-span"></div>
+    </div>
+  </div>
+</div>
+<hr class="sr-only" hidden />
+
+  <main
+  id="_main"
+  class="content layout-post"
+  role="main"
+>
+  <nav id="breadcrumbs" class="screen-only"><ul>
+  
+  
+    <li><a href="/">home</a></li>
+    
+      <li>
+      
+        <span>/</span>
+        
+        
+        <a href="/tblog/">tblog</a>
+      
+      </li>
+    
+      <li>
+      
+        <span>/</span>
+        <span>2021-09-18-git-guide</span>
+      
+      </li>
+    
+  
+</ul></nav>
+  
+
+
+
+
+
+
+
+
+
+
+<article id="post-tblog-git-guide" class="page post mb6" role="article">
+  <header>
+    <h1 class="post-title flip-project-title">
+      
+        A Definitive guide to Git
+      
+    </h1>
+
+    <div class="post-date">
+      
+      <span class="ellipsis mr1">
+        <time datetime="2021-09-18T00:00:00+05:30">18 Sep 2021</time> in <a href="/tblog/" class="flip-title">Technical Blog</a> 
+      </span>
+      
+    </div>
+
+    
+    
+      
+        <div class="img-wrapper lead aspect-ratio sixteen-nine flip-project-img">
+          
+
+
+<img
+  
+    src="/assets/img/git/git-front.png"
+    
+    
+  
+  alt="A Definitive guide to Git"
+  
+  
+  width="864"
+  height="486"
+  loading="lazy"
+/>
+
+        </div>
+      
+      
+    
+
+    
+
+
+
+  
+    <p class="note-sm" >
+      Git is the most commonly required skill for a developer. I have compiled various git resources and created a guide for beginners as well as intermediate developers.
+
+    </p>
+  
+
+
+  </header>
+
+  
+    
+<p>Git is one of the most common skill among all sorts of developers. However, it also the one in which they struggle with in their initial years. I have also been in the same boat, hence while I was on the journey of learning it, I compiled all the resources I learnt from in this guide. The guide also contains my inputs here and there.</p>
+
+<h2 id="git-intro">git –intro</h2>
+
+<p align="center">
+  <img src="/blog/assets/img/git/git-meme.png" alt="drawing" style="width:500px;" />
+</p>
+
+<ul>
+  <li>
+    <p><strong>Where is Git? What is Git? Why is Git?</strong> - <br /></p>
+
+    <p>Git is everywhere, at least the concept of it is. Every software development team in any organisation uses it. Heck, even I use this blog on Github pages and use Git to upload a new article. Its a version control system for software applications. It helps you manage versions on code based on the features you implement. So rather than being Tony Stark and using Mark1, Mark2 etc and saving those versions locally you opt for a smart method and use Git (Yes, Tony wasn’t as smart as you think 😛). And its collaboration friendly, and the performance is impressive once you know what goes on under the hood.</p>
+  </li>
+  <li>
+    <p><strong>Why don’t they teach it in school/college?</strong>  -<br />
+I don’t know buddy, they didn’t teach taxes either. Probably have to ask the “Curriculum Developers” how a mitochondria can help manage codebase better than Git.😛</p>
+  </li>
+  <li>
+    <p><strong>Is it hard?</strong> - <br /></p>
+
+    <p>No its not hard. Its seems a little complex, but you get the hang of it. But you need a collaborative environment to understand Git best, which you usually get once you join a organisation. Most freshers (like me) take time to get Git, and that is why I made this guide while I was learning myself.</p>
+  </li>
+  <li>
+    <p><strong>What desktop tools does one require for Git?</strong> - <br />
+Ideally command line is all one needs. However, there are plenty of Git GUI options available online. Based on your preference, you can search for it and set it up accordingly.</p>
+  </li>
+  <li>
+    <p><strong>How do I setup Git on my computer?</strong> - <br />
+Follow this <a href="https://git-scm.com/downloads" target="_blank">link</a></p>
+  </li>
+  <li>
+    <p><strong>What is a git repository?</strong> - <br /></p>
+
+    <p>Its a directory where you put your codebase. The directory is stored online (on Github/Gitlab or equivalent) and you can have a local copy of it on your computer as well. Every repository contains a “.git” folder which is hidden by default. This folder contains all the git related files and shouldn’t be edited manually in most cases. A repository contains your original data files,logs  with messages,author information,other information required to rebuild any version or branch of the project.</p>
+  </li>
+</ul>
+
+<h2 id="git-objects">git –objects</h2>
+
+<p>At the heart of Git’s repository implementation is the object store. Over time, all the information in the object store changes and grows, tracking and modeling your project edits, additions, and deletions. Git places only four types of objects in the object store:<br /><br /></p>
+
+<ul>
+  <li>
+    <p><strong>Blobs</strong></p>
+
+    <p>Each version of a file is represented as a blob. It stands for: “binary large object”, is a term that’s commonly used in computing to refer to some variable or file that can contain any data and whose internal structure is ignored by the program. A blob holds a file’s data but does not contain any metadata about the file or even its name.Git uses blobs to track files, but you should note that a blob stores only the contents of our file, not the name.</p>
+  </li>
+  <li>
+    <p><strong>Trees</strong></p>
+
+    <p>A tree object represents one level of directory information. It records blob identifiers, path names, and a bit of metadata for all the files in one directory. It can also recursively reference other sub-tree objects and thus build a complete hierarchy of files and subdirectories.</p>
+  </li>
+  <li>
+    <p><strong>Commits</strong></p>
+
+    <p>A commit object holds metadata for each CHANGE introduced into the repository, including the author, committer, commit date, and log message. If you see a commit log, you would find the changed lines in each of the code files along with additions and deletions. Each commit points to a tree object that captures, in one complete snapshot, the state of the repository at the time the commit was performed. The initial or first commit, or root commit, has no parent. It is often misconceived</p>
+  </li>
+  <li>
+    <p><strong>Tags</strong></p>
+
+    <p>A tag object assigns an arbitrary yet presumably human readable name to a specific object, usually a commit. Although e25e93e02de231e17abc53aa9ec15d971e refers to an exact and well-defined commit. So, by now you’ve got that HASH is also an important part of Git.</p>
+  </li>
+</ul>
+
+<h2 id="git-basics">git –basics</h2>
+
+<p>Lets get some hands on the basic tasks and terminologies of Git</p>
+
+<ul>
+  <li><strong>How to create a repository?</strong> - There are two methods:
+    <ul>
+      <li>Go to the Git Web UI and create a repository. This will create an empty repository directly online.</li>
+      <li>Create a repository locally. You run the following commands:
+        <div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">    $</span><span class="w"> </span><span class="nb">cd</span> /path/to/your/code/base
+<span class="gp">    $</span><span class="w"> </span>git init
+</code></pre></div>        </div>
+        <p>Once you have created it locally. You will still have to add some files and “push” this to the Git server so it gets stored remotely.</p>
+      </li>
+    </ul>
+  </li>
+  <li><strong>How to clone a remote(online) repository locally?</strong> - Run the command:<br />
+    <div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span><span class="w"> </span>git clone username@host:/path/to/repository  
+</code></pre></div>    </div>
+  </li>
+  <li><strong>How to push (upload) a local repository online to a remote server? or How to push changes from local to remote repository?</strong>- <br />
+    <ol>
+      <li>You need to create some files (if not present) in the repo directory. If there are some files and you have modified them, proceed to next step.</li>
+      <li>Stage the changes(locally). Run the command:
+        <div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">   $</span><span class="w"> </span>git add <span class="o">{</span>names of files you want to add <span class="k">in </span>the repository<span class="o">(</span>with file extension<span class="o">)}</span>
+</code></pre></div>        </div>
+        <p>You can also run:</p>
+        <div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">   $</span><span class="w"> </span>git add <span class="nb">.</span> <span class="c"># The . indicates to all newly added/modified files in the local repository folder.</span>
+</code></pre></div>        </div>
+        <p>Hence, in the second command all newly added/modified files are moved to the staged area.</p>
+      </li>
+      <li>Commit/confirm the changes (still locally). Run the command :
+        <div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">   $</span><span class="w"> </span>git commit <span class="nt">-m</span> <span class="s2">"message about the changes"</span>
+</code></pre></div>        </div>
+        <p>The -m option and the following message is optional but highly recommended. It just takes a few keystrokes but will surely help you and others understand your commit when its a collaborative repository.</p>
+      </li>
+      <li>Push the changes to remote repository (finally). Run the command:
+        <div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">   $</span><span class="w"> </span>git push
+</code></pre></div>        </div>
+      </li>
+    </ol>
+  </li>
+  <li><strong>How to pull changes from remote repository on (probably older) local?</strong>
+  Run the command :
+    <div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">    $</span><span class="w"> </span>git pull
+</code></pre></div>    </div>
+    <p>This will bring the local repository upto date with remote. However, if you made some changes on your local, this will ask you to do something with the changes. We will come to this later on.</p>
+  </li>
+</ul>
+
+<h2 id="git-tale_of_3_trees">git –tale_of_3_trees</h2>
+
+<p>So far we have only covered the basics, so you understand the basic know-how and terminologies. To better understand how Git is operating and for the rest of Git stuff to be smooth, we need to look into the metaphor of the three trees. These trees are different collections of files. Each of these trees has a different job: one tree to write changes, one tree to stage them, and one to point to your last commit on a branch in your Git repo.</p>
+
+<p>For the workflow of adding and retrieving commits, Git uses three different versions of files:
+<br /></p>
+
+<ol>
+  <li>
+    <p><strong>the working directory</strong> -</p>
+
+    <p>The working tree is a single checkout of one version of the project. These files are pulled out of the compressed database in the remote Git repository and placed on disk for you to use or modify.
+The working directory represents the actual files on your computer’s file system that are available to your code editor to apply changes. The working directory is a version of a particular commit, a particular snapshot of a project that you checked out. It is the version of your Git history that HEAD is pointing at, at any given moment.Files whose contents can be changed are in your working directory. Files placed in your index are getting prepared to be packaged into a commit object. These commits are saved in your Git repository. 
+<br /></p>
+  </li>
+  <li>
+    <p><strong>the index/staging area</strong> -</p>
+
+    <p>The staging area is a file, generally contained in your Git directory, that stores information about what will go into your next commit. Its technical name in Git parlance is the “index”, but the phrase “staging area” works just as well.
+ <br /></p>
+  </li>
+  <li>
+    <p><strong>something called “HEAD” for creating and for retrieving commits</strong> -</p>
+
+    <p>The Git directory a.k.a “HEAD” is where Git stores the metadata and object database for your project. This is the most important part of Git, and it is what is copied when you clone a repository from another computer. HEAD is the part of git that points to your branches. It’s a reference, and it has a pretty simple but hugely important job. HEAD points to the currently checked out branch, and that in turn points back to the last commit from that branch.(You must be thinking what is a branch? Just consider your repository main code a tree and figure out what a branch can be. We will discuss this in detail next). HEAD can move not only in time (when you check out previous commits), but it also moves when you create new branches or simply switch to other branches. It’s also the point in your Git history that you can place your next commit upon, the parent for your next commit. With every new commit, it replaces its reference to the branch currently checked out—by default, the master branch, of course. So, in effect, HEAD is a reference that frequently changes and points to two things: the branch itself, and through that, the last commit on that branch.</p>
+  </li>
+</ol>
+
+<p align="center">
+  <img src="/blog/assets/img/git/git-trees.png" alt="drawing" style="width:500px;" />
+</p>
+
+<p>The basic Git workflow goes something like this:</p>
+
+<ol>
+  <li>
+    <p>You modify files in your working tree.</p>
+  </li>
+  <li>
+    <p>You selectively stage just those changes you want to be part of your next commit, which adds only those changes to the staging area.</p>
+  </li>
+  <li>
+    <p>You do a commit, which takes the files as they are in the staging area and stores that snapshot permanently to your Git directory.</p>
+  </li>
+</ol>
+
+<p>If a particular version of a file is in the Git directory, it’s considered committed. If it has been modified and was added to the staging area, it is staged. And if it was changed since it was checked out but has not been staged, it is modified.</p>
+
+<h2 id="git-branches">git –branches</h2>
+
+<p>Git branches are effectively a pointer to a snapshot of your codebase, ergo a specific version of it. When you want to add a new feature or fix a bug—no matter how big or how small—you spawn a new branch off your main (or development branch) to encapsulate your changes. This makes it harder for unstable code to get merged into the main code base, and it gives you the chance to clean up your future’s history before merging it into the main branch.</p>
+
+<p align="center">
+  <img src="/blog/assets/img/git/git-branch1.jpg" alt="drawing" style="width:500px;" />
+</p>
+
+<p>The diagram above visualizes a repository with two isolated lines of development, one for a little feature, and one for a longer-running feature. By developing them in branches, it’s not only possible to work on both of them in parallel, but it also keeps the main branch free from questionable code.The implementation behind Git branches is much more lightweight than other version control system models. Instead of copying files from directory to directory, Git stores a branch as a reference to a commit. In this sense, a branch represents the tip of a series of commits—it’s not a container for commits. The history for a branch is extrapolated through the commit relationships.<br /><br /></p>
+
+<p>A branch represents an independent line of development. Branches serve as an abstraction for the edit/stage/commit process. You can think of them as a way to request a brand new working directory, staging area, and project history. New commits are recorded in the history for the current branch, which results in a fork in the history of the project.<br /><br /></p>
+
+<p>The default branch is “main”. The alternative term “master” has been deprecated but is still used in some cases. Hence, “master” or “main” are just the names commonly used for the…. wait for it……. <br />the main branch. But jokes apart, its just a name, you can name it “full_cake” as well (if your branches are “pastries”).<br /><br /></p>
+
+<p>Just like the branch name “master” does not have any special meaning in Git, neither does “origin”. While “master” is the default name for a starting branch when you run git init which is the only reason it’s widely used, “origin” is the default name for a remote when you run git clone. If you run git clone -o booyah instead, then you will have booyah/master as your default remote branch. In other words, “origin” is a name for the remote git domain name. (yes, git has many flavours apart from github)<br /><br /></p>
+
+<ul>
+  <li><strong>How to work with branches?<strong>
+</strong></strong>    <ol>
+      <li>Creating a local branch from current branch -
+        <div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">   $</span><span class="w"> </span>git checkout <span class="nt">-b</span> &lt;new_branch&gt;
+</code></pre></div>        </div>
+      </li>
+      <li>Creating a local branch from a specific branch -
+        <div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">   $</span><span class="w"> </span>git checkout <span class="nt">-b</span> &lt;new-branch&gt; &lt;from-branch-name&gt;
+</code></pre></div>        </div>
+      </li>
+      <li>Pushing the branch to remote repository -
+        <div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">   $</span><span class="w"> </span>git push origin &lt;new_branch&gt;
+</code></pre></div>        </div>
+      </li>
+      <li>Deleting a remote branch -
+        <div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">   $</span><span class="w"> </span>git push origin <span class="nt">--delete</span> &lt;my-branch-name&gt;
+</code></pre></div>        </div>
+      </li>
+      <li>Deleting a local branch, run either of these commands-
+        <div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">   $</span><span class="w"> </span>git branch <span class="nt">-d</span> &lt;my-branch-name&gt;
+</code></pre></div>        </div>
+        <p>OR</p>
+        <div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">   $</span><span class="w"> </span>git branch <span class="nt">-D</span> &lt;my-branch-name&gt;
+</code></pre></div>        </div>
+      </li>
+      <li>Switch an already present branch -
+        <div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">   $</span><span class="w"> </span>git pull <span class="c"># if the branch is remote,else can skip this</span>
+<span class="gp">   $</span><span class="w"> </span>git checkout &lt;my-branch_name&gt;
+</code></pre></div>        </div>
+      </li>
+      <li>List Branches -
+        <div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">   $</span><span class="w"> </span>git branch <span class="c"># local branches</span>
+<span class="gp">   $</span><span class="w"> </span>git branch <span class="nt">-r</span> <span class="c"># remote branches</span>
+<span class="gp">   $</span><span class="w"> </span>git branch <span class="nt">-a</span> <span class="c"># all local and remote branches</span>
+</code></pre></div>        </div>
+      </li>
+    </ol>
+  </li>
+</ul>
+
+<h2 id="git-merge">git –merge</h2>
+
+<p>Merging is Git’s way of putting a forked history back together again. The git merge command lets you take the independent lines of development created by git branch and integrate them into a single branch.Note that all of the commands presented below merge into the current branch. The current branch will be updated to reflect the merge, but the target branch will be completely unaffected.Git merge will combine multiple sequences of commits into one unified history. In the most frequent use cases, git merge is used to combine two branches. In most common scenarios, git merge takes two commit pointers, usually the branch tips, and will find a common base commit between them. Once Git finds a common base commit it will create a new “merge commit” that combines the changes of each queued merge commit sequence.<br /><br /></p>
+
+<p>Say we have a new branch feature that is based off the main branch. We now want to merge this feature branch into main.<br /><br /></p>
+
+<p align="center">
+  <img src="/blog/assets/img/git/git-merge1.png" alt="drawing" style="width:500px;" />
+</p>
+
+<p>Invoking this command will merge the specified branch feature into the current branch, we’ll assume main. Git will determine the merge algorithm automatically (discussed below).<br /><br /></p>
+
+<p align="center">
+  <img src="/blog/assets/img/git/git-merge2.png" alt="drawing" style="width:500px;" />
+</p>
+
+<p>Merge commits are unique against other commits in the fact that they have two parent commits. When creating a merge commit Git will attempt to auto magically merge the separate histories for you. If Git encounters a piece of data that is changed in both histories it will be unable to automatically combine them. This scenario is a merge conflict and Git will need user intervention to continue.<br /><br /></p>
+
+<p><strong>What are the general steps to merge branches smoothly?</strong></p>
+
+<ul>
+  <li>
+    <p><strong>Confirm the receiving branch</strong><br /></p>
+
+    <p>Execute git status to ensure that HEAD is pointing to the correct merge-receiving branch. If needed, execute git checkout to switch to the receiving branch. In our case we will execute git checkout main.</p>
+  </li>
+  <li>
+    <p><strong>Fetch latest remote commits</strong><br /></p>
+
+    <p>Make sure the receiving branch and the merging branch are up-to-date with the latest remote changes. Execute git fetch to pull the latest remote commits. Once the fetch is completed ensure the main branch has the latest updates by executing git pull.</p>
+  </li>
+  <li>
+    <p><strong>Merging</strong><br /></p>
+
+    <p>Once the previously discussed “preparing to merge” steps have been taken a merge can be initiated by executing git merge where  is the name of the branch that will be merged into the receiving branch.</p>
+  </li>
+  <li>
+    <p><strong>Fast Forward Merge</strong><br /></p>
+
+    <p>A fast-forward merge can occur when there is a linear path from the current branch tip to the target branch. Instead of “actually” merging the branches, all Git has to do to integrate the histories is move (i.e., “fast forward”) the current branch tip up to the target branch tip. This effectively combines the histories, since all of the commits reachable from the target branch are now available through the current one. For example, a fast forward merge of some-feature into main would look something like the following:</p>
+  </li>
+</ul>
+
+<p align="center">
+  <img src="/blog/assets/img/git/git-merge3.jpg" alt="drawing" style="width:500px;" />
+</p>
+<p><br /></p>
+
+<p>However, a fast-forward merge is not possible if the branches have diverged. When there is not a linear path to the target branch, Git has no choice but to combine them via a 3-way merge. 3-way merges use a dedicated commit to tie together the two histories. The nomenclature comes from the fact that Git uses three commits to generate the merge commit: the two branch tips and their common ancestor.</p>
+
+<p><br /></p>
+<p align="center">
+  <img src="/blog/assets/img/git/git-merge4.jpg" alt="drawing" style="width:500px;" />
+</p>
+
+<p>While you can use either of these merge strategies, many developers like to use fast-forward merges (facilitated through rebasing) for small features or bug fixes, while reserving 3-way merges for the integration of longer-running features. In the latter case, the resulting merge commit serves as a symbolic joining of the two branches.<br /><br /></p>
+
+<p><strong>Resolving Merge conflict</strong><br /><br /></p>
+
+<p>If the two branches you’re trying to merge both changed the same part of the same file, Git won’t be able to figure out which version to use. When such a situation occurs, it stops right before the merge commit so that you can resolve the conflicts manually. The great part of Git’s merging process is that it uses the familiar edit/stage/commit workflow to resolve merge conflicts. When you encounter a merge conflict, running the git status command shows you which files need to be resolved. Most code editors or IDEs will also show the conflicts and even offer many intuitive GUI tools for you to resolve the conflicts in the codebase. Once you have resolved all conflicts manually, you need to push the merge to the remote repository because so far everything done is in your local branch. The merge commit needs to be pushed just like any other commit.</p>
+
+<h2 id="git-rebase">git –rebase</h2>
+
+<p>Rebase is one of two Git utilities that specializes in integrating changes from one branch onto another. The other change integration utility is git merge. Merge is always a forward moving change record. Alternatively, rebase has powerful history rewriting features. For a detailed look at Merge vs. Rebase, visit our Merging vs Rebasing guide. Rebase itself has 2 main modes: “manual” and “interactive” mode. It is a common way to integrate upstream changes into your local repository. Pulling in upstream changes with Git merge results in a superfluous merge commit every time you want to see how the project has progressed. On the other hand, rebasing is like saying, “I want to base my changes on what everybody has already done.”</p>
+
+<p>Rebasing is the process of moving or combining a sequence of commits to a new base commit. Rebasing is most useful and easily visualized in the context of a feature branching workflow. The general process can be visualized as the following:</p>
+
+<p align="center">
+  <img src="/blog/assets/img/git/git-rebase1.jpg" alt="drawing" style="width:500px;" />
+</p>
+
+<p>From a content perspective, rebasing is changing the base of your branch from one commit to another making it appear as if you’d created your branch from a different commit. Internally, Git accomplishes this by creating new commits and applying them to the specified base. It’s very important to understand that even though the branch looks the same, it’s composed of entirely new commits.</p>
+
+<p>The primary reason for rebasing is to maintain a linear project history. For example, consider a situation where the main branch has progressed since you started working on a feature branch. You want to get the latest updates to the main branch in your feature branch, but you want to keep your branch’s history clean so it appears as if you’ve been working off the latest main branch. This gives the later benefit of a clean merge of your feature branch back into the main branch. Why do we want to maintain a “clean history”? The benefits of having a clean history become tangible when performing Git operations to investigate the introduction of a regression. You have two options for integrating your feature into the main branch: merging directly or rebasing and then merging. The former option results in a 3-way merge and a merge commit, while the latter results in a fast-forward merge and a perfectly linear history. The following diagram demonstrates how rebasing onto the main branch facilitates a fast-forward merge.</p>
+
+<p align="center">
+  <img src="/blog/assets/img/git/git-rebase2.jpg" alt="drawing" style="width:500px;" />
+</p>
+
+<p>It is important to note that git rebase rewrites the commit history. It can be harmful to do it in shared branches. It can cause complex and hard to resolve merge conflicts. In these cases, instead of rebasing your branch against the default branch, consider pulling it instead (git pull origin master). It has a similar effect without compromising the work of your contributors.
+<br /></p>
+
+<p><strong>How to rebase?</strong></p>
+
+<ul>
+  <li><strong>Before rebasing</strong></li>
+</ul>
+
+<p>It’s safer to back up your branch before rebasing to make sure you don’t lose any changes. For example, consider a feature branch called my-feature-branch:</p>
+
+<ol>
+  <li>Open your feature branch in the terminal:
+    <div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">  $</span><span class="w"> </span>git checkout my-feature-branch
+</code></pre></div>    </div>
+  </li>
+  <li>Checkout a new branch from it:
+    <div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">  $</span><span class="w"> </span>git checkout <span class="nt">-b</span> my-feature-branch-backup
+</code></pre></div>    </div>
+  </li>
+  <li>Go back to your original branch:
+    <div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">  $</span><span class="w"> </span>git checkout my-feature-branch
+</code></pre></div>    </div>
+    <p>Now you can safely rebase it. If anything goes wrong, you can recover your changes by resetting my-feature-branch against my-feature-branch-backup using the following command:</p>
+    <div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">  $</span><span class="w"> </span>git reset <span class="nt">--hard</span> my-feature-branch-backup
+</code></pre></div>    </div>
+    <p>Note that if you added changes to my-feature-branch after creating the backup branch, you lose them when resetting.</p>
+  </li>
+</ol>
+
+<ul>
+  <li><strong>Regular rebase</strong></li>
+</ul>
+
+<p align="center">
+  <img src="/blog/assets/img/git/git-rebase3.png" alt="drawing" style="width:1000px;" />
+</p>
+
+<p>With a regular rebase you can update your feature branch with the default branch (or any other branch). This is an important step for Git-based development strategies. You can ensure that the changes you’re adding to the codebase do not break any existing changes added to the target branch after you created your feature branch.</p>
+
+<p>For example, to update your branch my-feature-branch with your default branch (here, using main):</p>
+
+<ol>
+  <li>Fetch the latest changes from main:
+    <div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp"> $</span><span class="w"> </span>git fetch origin main
+</code></pre></div>    </div>
+  </li>
+  <li>Checkout your feature branch:
+    <div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp"> $</span><span class="w"> </span>git checkout my-feature-branch
+</code></pre></div>    </div>
+  </li>
+  <li>Rebase it against main:
+    <div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp"> $</span><span class="w"> </span>git rebase origin/main
+</code></pre></div>    </div>
+  </li>
+  <li>Force-push to your branch.(When you perform more complex operations, for example, squash commits, reset or rebase your branch, you must force an update to the remote branch. These operations imply rewriting the commit history of the branch. To force an update, pass the flag –force or -f to the push command. )
+    <div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp"> $</span><span class="w"> </span>git push <span class="nt">--force</span> origin my-feature-branch
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<p><strong>Git merge vs Git rebase</strong></p>
+
+<ul>
+  <li>
+    <p>Merge takes all the changes in one branch and merges them into another branch in one commit.Let’s say you have created a branch for the purpose of developing a single feature. When you want to bring those changes back to master, you probably want merge (you don’t care about maintaining all of the interim commits).</p>
+  </li>
+  <li>
+    <p>Rebase says I want the point at which I branched to move to a new starting point. If you started doing some development and then another developer made an unrelated change. You probably want to pull and then rebase to base your changes from the current version from the repository.</p>
+  </li>
+</ul>
+
+<h2 id="git-org_workflows">git –org_workflows</h2>
+<p>Every organisation uses a specific workflow when managing codebase using any flavour of Git. A Git workflow is like a bureaucratic system where the members of the repository have different roles on different branches, just like any federal government. Since its not exactly a Git technique, I won’t be covering it in this guide. You can have a look at common git workflows at this <a href="https://zepel.io/blog/5-git-workflows-to-improve-development/" target="_blank">link</a></p>
+
+<h2 id="git-miscellaneous">git –miscellaneous</h2>
+<p>I have not covered all git commands and their various options as you can always refer to a <a href="https://education.github.com/git-cheat-sheet-education.pdf" target="_blank">cheatsheet</a> for that. Based on the scenarios you may face, you can figure out options now that you understand how Git works and all the major methods. Here are a few more commands that are useful on a regular basis:</p>
+
+<ol>
+  <li><strong>Status</strong> -
+    <div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp"> $</span><span class="w"> </span>git status
+</code></pre></div>    </div>
+    <p>List which files are staged, unstaged, and untracked.</p>
+  </li>
+  <li><strong>Fetch</strong> -
+    <div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp"> $</span><span class="w"> </span>git fetch
+</code></pre></div>    </div>
+    <p>The git fetch command downloads commits, files, and refs from a remote repository into your local repo. Fetching is what you do when you want to see what everybody else has been working on. Git isolates fetched content from existing local content; it has absolutely no effect on your local development work. Fetched content has to be explicitly checked out using the git checkout command. This makes fetching a safe way to review commits before integrating them with your local repository.<br /></p>
+
+    <p>When downloading content from a remote repo, git pull and git fetch commands are available to accomplish the task. You can consider git fetch the ‘safe’ version of the two commands. It will download the remote content but not update your local repo’s working state, leaving your current work intact. git pull is the more aggressive alternative; it will download the remote content for the active local branch and immediately execute git merge to create a merge commit for the new remote content. If you have pending changes in progress this will cause conflicts and kick-off the merge conflict resolution flow.</p>
+  </li>
+  <li><strong>Log</strong> -
+    <div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp"> $</span><span class="w"> </span>git log
+</code></pre></div>    </div>
+    <p>Display the entire commit history using the default format.</p>
+  </li>
+  <li><strong>Diff</strong> -
+    <div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp"> $</span><span class="w"> </span>git diff
+</code></pre></div>    </div>
+    <p>Show unstaged changes between your index and working directory.<br /><br /></p>
+  </li>
+</ol>
+
+<p>Feel free to let me know in the comments below or reach out to me on the platforms(links on the left) to discuss Git. I am giving credits to the resources I used to create this guide in the links below.</p>
+
+<p>References : <a href="https://pamodaaw.medium.com/a-simple-guide-to-starting-with-git-516f41a696f2" target="_blank">Medium</a>,<a href="https://code.tutsplus.com/tutorials/what-are-the-three-trees-in-git--cms-28188" target="_blank">Tutsplus</a>,<a href="https://git-scm.com/" target="_blank">Git-scm</a>,<a href="https://www.atlassian.com/git/tutorials" target="_blank">Atlassian</a>,<a href="https://docs.gitlab.com/" target="_blank">Gitlab Docs</a></p>
+
+<p>Image Credit: <a href="https://softchief.com/" target="_blank">SoftChief</a>,<a href="https://softchief.com/" target="_blank">ImgFlip</a>,<a href="https://www.atlassian.com/git/tutorials" target="_blank">Atlassian</a></p>
+
+  
+</article>
+
+
+
+  <clap-button class="mb6" ></clap-button>
+  
+  
+    <p class="message centered border-radius" >
+      <span style="display:block;margin-bottom:.5rem;">This is a preview of <a href="https://getclaps.app">Clap Button</a>, a new feedback and analytics tools for Hydejack, built by yours truly.</span>
+      <span style="display:block;margin-bottom:.5rem;">You can try it out on <code>localhost</code> for free, but it will be removed (together with this message) when building with <code>JEKYLL_ENV=production</code>.</span>
+      <span style="display:block;margin-bottom:.5rem;">To use Clap Button on your site, get a <a href="https://getclaps.app#pricing">subscription</a><br/>and set <code>clap_button: true</code> in your config file.</span>
+    </p>
+  
+
+
+
+
+
+
+  
+     
+
+
+  <aside class="about related mt4 mb4" role="complementary">
+    
+    
+
+<div class="author mt4">
+  
+
+  
+    
+
+
+<img
+  
+    src="/assets/img/about-me.jpg"
+    
+    
+  
+  alt="Aneesh Dua"
+  class="avatar"
+  
+  width="120"
+  height="120"
+  loading="lazy"
+/>
+
+  
+
+  
+  
+  <h2  class="page-title hr-bottom">
+    About
+  </h2>
+
+  <p>Hi, I am Aneesh Dua, a 22 year old with an instinct of a hacker. I like to look at things outside the normal perspective. I like to ponder over human psychology and life’s unanswered questions.</p>
+
+
+  <div class="sidebar-social">
+    <span class="sr-only">Social:</span>
+<ul>
+  
+    
+      
+
+
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  <li>
+    <a href="https://twitter.com/aneeshdua" title="Twitter" class="no-mark-external">
+      <span class="icon-twitter"></span>
+      <span class="sr-only">Twitter</span>
+    </a>
+  </li>
+
+
+    
+      
+
+
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  <li>
+    <a href="https://github.com/aneeshdua" title="GitHub" class="no-mark-external">
+      <span class="icon-github"></span>
+      <span class="sr-only">GitHub</span>
+    </a>
+  </li>
+
+
+    
+      
+
+
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  <li>
+    <a href="mailto:workstuff.dua@gmail.com" title="Email" class="no-mark-external">
+      <span class="icon-mail"></span>
+      <span class="sr-only">Email</span>
+    </a>
+  </li>
+
+
+    
+      
+
+
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  <li>
+    <a href="https://instagram.com/the_real_exorcist" title="Instagram" class="no-mark-external">
+      <span class="icon-instagram"></span>
+      <span class="sr-only">Instagram</span>
+    </a>
+  </li>
+
+
+    
+      
+
+
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  <li>
+    <a href="https://www.linkedin.com/in/aneesh-dua-b6160b151" title="LinkedIn" class="no-mark-external">
+      <span class="icon-linkedin2"></span>
+      <span class="sr-only">LinkedIn</span>
+    </a>
+  </li>
+
+
+    
+      
+
+
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  <li>
+    <a href="https://drive.google.com/file/d/17G6QrEZb39lRo8mtrIEk1V9Gxf1UdBfN/view?usp=sharing" title="Download" class="no-mark-external">
+      <span class="icon-box-add"></span>
+      <span class="sr-only">Download</span>
+    </a>
+  </li>
+
+
+    
+  
+</ul>
+
+  </div>
+</div>
+
+  </aside>
+
+
+  
+
+  
+  
+
+  
+    
+
+
+  <aside class="related mb4" role="complementary">  <h2 class="hr-bottom">Related Posts</h2>  <ul class="related-posts">                  <li class="h4">  <a href="/tblog/2021-07-31-setup-linux/" class="flip-title"><span>How to automatically setup your linux environment</span></a>  <time class="faded fine" datetime="2021-07-31T00:00:00+05:30">31 Jul 2021</time></li>                        <li class="h4">  <a href="/tblog/2021-07-16-everyone-is-hacked/" class="flip-title"><span>Everyone is hacked</span></a>  <time class="faded fine" datetime="2021-07-16T00:00:00+05:30">16 Jul 2021</time></li>                        <li class="h4">  <a href="/lblog/2021-04-06-mandm/" class="flip-title"><span>The M&M of spiritual life</span></a>  <time class="faded fine" datetime="2021-04-06T00:00:00+05:30">06 Apr 2021</time></li>            </ul></aside>
+
+  
+
+  
+  
+
+  
+    
+<aside class="comments related" role="complementary">
+  <h2 class="hr-bottom">Comments</h2>
+  
+
+  
+  
+  <script src="https://utteranc.es/client.js"
+            repo="aneeshdua/blog"
+            issue-term="pathname"
+            label="comments"
+            theme="github-light"
+            crossorigin="anonymous"
+            async>
+</script>
+  
+
+
+</aside>
+
+
+  
+
+
+  
+<footer class="content" role="contentinfo">
+  <hr/>
+  
+    <p><small class="copyright">© 2021. All rights reserved.
+</small></p>
+  
+  
+    <nav class="legal"><small>
+    
+      
+      <a class="heading flip-title" href="/LICENSE/">LICENSE</a>
+      |
+    
+      
+      <a class="heading flip-title" href="/NOTICE/">NOTICE</a>
+      |
+    
+      
+      <a class="heading flip-title" href="/CHANGELOG/">CHANGELOG</a>
+      
+    
+    </small></nav>
+  
+    <p><small>Powered by <a class="external" href="https://hydejack.com/">Hydejack</a> v<span id="_version">9.1.4</span></small></p>
+  <hr class="sr-only"/>
+</footer>
+
+
+</main>
+
+  <hy-drawer
+  id="_drawer"
+  class=""
+  side="left"
+  threshold="10"
+  noscroll
+  
+>
+  <header id="_sidebar" class="sidebar" role="banner">
+    
+
+
+
+
+<div class="sidebar-bg sidebar-overlay" style="background-color:rgb(8,46,57);background-image:url(/assets/img/bg-2.jpg)"></div>
+
+    <div class="sidebar-sticky">
+  <div class="sidebar-about">
+    
+      <a class="no-hover" href="/" tabindex="-1">
+        <img src="/assets/img/hm_white_medium.png" class="avatar" alt="Hacker Monk" width="120" height="120" loading="lazy" />
+      </a>
+    
+    <a class="sidebar-title" href="/"><h2 class="h1">Hacker Monk</h2></a>
+    
+    
+      <p class="">
+        A hacker by instinct and monk by mindset.
+
+      </p>
+    
+  </div>
+
+  <nav class="sidebar-nav heading" role="navigation">
+    <span class="sr-only">Navigation:</span>
+<ul>
+  
+    
+      
+      <li>
+        <a
+          id="_drawer--opened"
+          href="/about/"
+          class="sidebar-nav-item "
+          
+        >
+          About
+        </a>
+      </li>
+    
+      
+      <li>
+        <a
+          
+          href="/lblog/"
+          class="sidebar-nav-item "
+          
+        >
+          Life Blog
+        </a>
+      </li>
+    
+      
+      <li>
+        <a
+          
+          href="/tblog/"
+          class="sidebar-nav-item "
+          
+        >
+          Tech Blog
+        </a>
+      </li>
+    
+  
+</ul>
+
+  </nav>
+
+  
+  <div class="sidebar-social">
+    <span class="sr-only">Social:</span>
+<ul>
+  
+    
+      
+
+
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  <li>
+    <a href="https://twitter.com/aneeshdua" title="Twitter" class="no-mark-external">
+      <span class="icon-twitter"></span>
+      <span class="sr-only">Twitter</span>
+    </a>
+  </li>
+
+
+    
+      
+
+
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  <li>
+    <a href="https://github.com/aneeshdua" title="GitHub" class="no-mark-external">
+      <span class="icon-github"></span>
+      <span class="sr-only">GitHub</span>
+    </a>
+  </li>
+
+
+    
+      
+
+
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  <li>
+    <a href="mailto:workstuff.dua@gmail.com" title="Email" class="no-mark-external">
+      <span class="icon-mail"></span>
+      <span class="sr-only">Email</span>
+    </a>
+  </li>
+
+
+    
+      
+
+
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  <li>
+    <a href="https://instagram.com/the_real_exorcist" title="Instagram" class="no-mark-external">
+      <span class="icon-instagram"></span>
+      <span class="sr-only">Instagram</span>
+    </a>
+  </li>
+
+
+    
+      
+
+
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  <li>
+    <a href="https://www.linkedin.com/in/aneesh-dua-b6160b151" title="LinkedIn" class="no-mark-external">
+      <span class="icon-linkedin2"></span>
+      <span class="sr-only">LinkedIn</span>
+    </a>
+  </li>
+
+
+    
+      
+
+
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  <li>
+    <a href="https://drive.google.com/file/d/17G6QrEZb39lRo8mtrIEk1V9Gxf1UdBfN/view?usp=sharing" title="Download" class="no-mark-external">
+      <span class="icon-box-add"></span>
+      <span class="sr-only">Download</span>
+    </a>
+  </li>
+
+
+    
+  
+</ul>
+
+  </div>
+</div>
+  </header>
+</hy-drawer>
+<hr class="sr-only" hidden />
+
+</hy-push-state>
+
+
+  <!--[if gt IE 10]><!---->
+  <script nomodule>!function(){var t,n=document.createElement("script");!("noModule"in n)&&"onbeforeload"in n&&(t=!1,document.addEventListener("beforeload",function(e){if(e.target===n)t=!0;else if(!e.target.hasAttribute("nomodule")||!t)return;e.preventDefault()},!0),n.type="module",n.src=".",document.head.appendChild(n),n.remove())}();
+</script>
+  <script src="/assets/js/hydejack-9.1.4.js" type="module"></script>
+  <script src="/assets/js/LEGACY-hydejack-9.1.4.js" nomodule defer></script>
+  
+
+  
+
+<!--<![endif]-->
+  <!-- <script>
+  document.querySelector('hy-push-state').setAttribute('prefetch', '');
+
+  document.querySelectorAll('.sidebar a[href^="/"]').forEach(function (el) { 
+    el.addEventListener('click', function (e) {
+      if (el.pathname === window.location.pathname) {
+        e.preventDefault();
+        e.stopPropagation();
+        document.querySelector('hy-drawer').close();
+      }
+    });
+  });
+</script> -->
+
+<!--
+Code for integrating CloudFlare's email protection with Hydejack's single page app loading.
+-->
+<script>
+  document.getElementById('_pushState').addEventListener('hy-push-state-after', function (e) {
+    function e(e){
+      (console.error?console.error:console.log).call(console,e)
+    }
+
+    function t(e){
+      return l.innerHTML='<a href="'+e.replace(/"/g,"&quot;")+'"></a>',l.childNodes[0].getAttribute("href")
+    }
+
+    function r(e,t){
+      var r=e.substr(t,2);return parseInt(r,16)
+    }
+
+    function n(e,n){
+      for(var o="",c=r(e,n),a=n+2;a<e.length;a+=2){
+        var l=r(e,a)^c;
+        o+=String.fromCharCode(l)
+      }
+      return t(o)
+    }
+
+    var o="/cdn-cgi/l/email-protection#",
+        c=".__cf_email__",
+        a="data-cfemail",
+        l=document.createElement("div");
+
+    !function(){
+      for(var t=document.getElementsByTagName("a"),r=0;r<t.length;r++)
+        try{
+          var c=t[r],a=c.href.indexOf(o);
+          a>-1&&(c.href="mailto:"+n(c.href,a+o.length))
+        }catch(t){
+          e(t)
+        }
+    }(),
+    function(){
+      for(var t=document.querySelectorAll(c),r=0;r<t.length;r++)
+        try{
+          var o=t[r],l=n(o.getAttribute(a),0),i=document.createTextNode(l);
+          o.parentNode.replaceChild(i,o)
+        }catch(t){
+          e(t)
+        }
+    }()
+  });
+</script>
+
+
+
+
+
+<div hidden>
+  
+  <h2 class="sr-only">Templates (for web app):</h2>
+
+  <clap-config>
+    <clap-text at="1">Keep going!</clap-text>
+    <clap-text at="2">Keep going ×2!</clap-text>
+    <clap-text at="3">Give me more!</clap-text>
+    <clap-text at="5">Thank you, thank you</clap-text>
+    <clap-text at="7">Far too kind!</clap-text>
+    <clap-text at="10">Never gonna give me up?</clap-text>
+    <clap-text at="14">Never gonna let me down?</clap-text>
+    <clap-text at="20">Turn around and desert me!</clap-text>
+    <clap-text at="30">You're an addict!</clap-text>
+    <clap-text at="40">Son of a clapper!</clap-text>
+    <clap-text at="50">No way</clap-text>
+    <clap-text at="60">Go back to work!</clap-text>
+    <clap-text at="70">This is getting out of <em>hand</em></clap-text>
+    <clap-text at="80">Unbelievable</clap-text>
+    <clap-text at="90">PREPOSTEROUS</clap-text>
+    <clap-text at="100">I N S A N I T Y</clap-text>
+    <clap-text at="185"><span style="font-family:monospace">FEED ME A STRAY CAT</span></clap-text>
+  </clap-config>
+
+  <template id="_animation-template">
+  <div class="animation-main fixed-top">
+    <nav id="breadcrumbs" class="screen-only"><ul>
+  
+  
+</ul></nav>
+    <div class="content">
+      <div class="page"></div>
+    </div>
+  </div>
+</template>
+
+  <template id="_loading-template">
+  <div class="loading nav-btn fr">
+    <span class="sr-only">Loading…</span>
+    <span class="icon-cog"></span>
+  </div>
+</template>
+
+  <template id="_error-template">
+  <div class="page">
+    <h1 class="page-title">Error</h1>
+    
+    
+    <p class="lead">
+      Sorry, an error occurred while loading <a class="this-link" href=""></a>.
+
+    </p>
+  </div>
+</template>
+
+  <template id="_permalink-template">
+  <a href="#" class="permalink">
+    <span class="sr-only">Permalink</span>
+    <span class="content-hash"></span>
+  </a>
+</template>
+
+</div>
+
+
+</body>
+</html>

@@ -1,5 +1,411 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2021-07-31T15:17:27+05:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">Hacker Monk</title><subtitle>A hacker by instinct and monk by mindset.
-</subtitle><author><name>Aneesh Dua</name><email>workstuff.dua@gmail.com</email></author><entry><title type="html">How to automatically setup your linux environment</title><link href="http://localhost:4000/tblog/2021-07-31-setup-linux/" rel="alternate" type="text/html" title="How to automatically setup your linux environment" /><published>2021-07-31T00:00:00+05:30</published><updated>2021-07-31T00:00:00+05:30</updated><id>http://localhost:4000/tblog/setup-linux</id><content type="html" xml:base="http://localhost:4000/tblog/2021-07-31-setup-linux/">&lt;h2 id=&quot;what-do-i-mean-by-environment-setup&quot;&gt;What do I mean by environment setup?&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2021-10-03T16:18:08+05:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">Hacker Monk</title><subtitle>A hacker by instinct and monk by mindset.
+</subtitle><author><name>Aneesh Dua</name><email>workstuff.dua@gmail.com</email></author><entry><title type="html">A Definitive guide to Git</title><link href="http://localhost:4000/tblog/2021-09-18-git-guide/" rel="alternate" type="text/html" title="A Definitive guide to Git" /><published>2021-09-18T00:00:00+05:30</published><updated>2021-09-18T00:00:00+05:30</updated><id>http://localhost:4000/tblog/git-guide</id><content type="html" xml:base="http://localhost:4000/tblog/2021-09-18-git-guide/">&lt;p&gt;Git is one of the most common skill among all sorts of developers. However, it also the one in which they struggle with in their initial years. I have also been in the same boat, hence while I was on the journey of learning it, I compiled all the resources I learnt from in this guide. The guide also contains my inputs here and there.&lt;/p&gt;
+
+&lt;h2 id=&quot;git-intro&quot;&gt;git –intro&lt;/h2&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+  &lt;img src=&quot;/blog/assets/img/git/git-meme.png&quot; alt=&quot;drawing&quot; style=&quot;width:500px;&quot; /&gt;
+&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Where is Git? What is Git? Why is Git?&lt;/strong&gt; - &lt;br /&gt;&lt;/p&gt;
+
+    &lt;p&gt;Git is everywhere, at least the concept of it is. Every software development team in any organisation uses it. Heck, even I use this blog on Github pages and use Git to upload a new article. Its a version control system for software applications. It helps you manage versions on code based on the features you implement. So rather than being Tony Stark and using Mark1, Mark2 etc and saving those versions locally you opt for a smart method and use Git (Yes, Tony wasn’t as smart as you think 😛). And its collaboration friendly, and the performance is impressive once you know what goes on under the hood.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Why don’t they teach it in school/college?&lt;/strong&gt;  -&lt;br /&gt;
+I don’t know buddy, they didn’t teach taxes either. Probably have to ask the “Curriculum Developers” how a mitochondria can help manage codebase better than Git.😛&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Is it hard?&lt;/strong&gt; - &lt;br /&gt;&lt;/p&gt;
+
+    &lt;p&gt;No its not hard. Its seems a little complex, but you get the hang of it. But you need a collaborative environment to understand Git best, which you usually get once you join a organisation. Most freshers (like me) take time to get Git, and that is why I made this guide while I was learning myself.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;What desktop tools does one require for Git?&lt;/strong&gt; - &lt;br /&gt;
+Ideally command line is all one needs. However, there are plenty of Git GUI options available online. Based on your preference, you can search for it and set it up accordingly.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;How do I setup Git on my computer?&lt;/strong&gt; - &lt;br /&gt;
+Follow this &lt;a href=&quot;https://git-scm.com/downloads&quot; target=&quot;_blank&quot;&gt;link&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;What is a git repository?&lt;/strong&gt; - &lt;br /&gt;&lt;/p&gt;
+
+    &lt;p&gt;Its a directory where you put your codebase. The directory is stored online (on Github/Gitlab or equivalent) and you can have a local copy of it on your computer as well. Every repository contains a “.git” folder which is hidden by default. This folder contains all the git related files and shouldn’t be edited manually in most cases. A repository contains your original data files,logs  with messages,author information,other information required to rebuild any version or branch of the project.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;git-objects&quot;&gt;git –objects&lt;/h2&gt;
+
+&lt;p&gt;At the heart of Git’s repository implementation is the object store. Over time, all the information in the object store changes and grows, tracking and modeling your project edits, additions, and deletions. Git places only four types of objects in the object store:&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Blobs&lt;/strong&gt;&lt;/p&gt;
+
+    &lt;p&gt;Each version of a file is represented as a blob. It stands for: “binary large object”, is a term that’s commonly used in computing to refer to some variable or file that can contain any data and whose internal structure is ignored by the program. A blob holds a file’s data but does not contain any metadata about the file or even its name.Git uses blobs to track files, but you should note that a blob stores only the contents of our file, not the name.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Trees&lt;/strong&gt;&lt;/p&gt;
+
+    &lt;p&gt;A tree object represents one level of directory information. It records blob identifiers, path names, and a bit of metadata for all the files in one directory. It can also recursively reference other sub-tree objects and thus build a complete hierarchy of files and subdirectories.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Commits&lt;/strong&gt;&lt;/p&gt;
+
+    &lt;p&gt;A commit object holds metadata for each CHANGE introduced into the repository, including the author, committer, commit date, and log message. If you see a commit log, you would find the changed lines in each of the code files along with additions and deletions. Each commit points to a tree object that captures, in one complete snapshot, the state of the repository at the time the commit was performed. The initial or first commit, or root commit, has no parent. It is often misconceived&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Tags&lt;/strong&gt;&lt;/p&gt;
+
+    &lt;p&gt;A tag object assigns an arbitrary yet presumably human readable name to a specific object, usually a commit. Although e25e93e02de231e17abc53aa9ec15d971e refers to an exact and well-defined commit. So, by now you’ve got that HASH is also an important part of Git.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;git-basics&quot;&gt;git –basics&lt;/h2&gt;
+
+&lt;p&gt;Lets get some hands on the basic tasks and terminologies of Git&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;How to create a repository?&lt;/strong&gt; - There are two methods:
+    &lt;ul&gt;
+      &lt;li&gt;Go to the Git Web UI and create a repository. This will create an empty repository directly online.&lt;/li&gt;
+      &lt;li&gt;Create a repository locally. You run the following commands:
+        &lt;div class=&quot;language-console highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;    $&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; /path/to/your/code/base
+&lt;span class=&quot;gp&quot;&gt;    $&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;git init
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
+        &lt;p&gt;Once you have created it locally. You will still have to add some files and “push” this to the Git server so it gets stored remotely.&lt;/p&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;How to clone a remote(online) repository locally?&lt;/strong&gt; - Run the command:&lt;br /&gt;
+    &lt;div class=&quot;language-console highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;git clone username@host:/path/to/repository  
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;How to push (upload) a local repository online to a remote server? or How to push changes from local to remote repository?&lt;/strong&gt;- &lt;br /&gt;
+    &lt;ol&gt;
+      &lt;li&gt;You need to create some files (if not present) in the repo directory. If there are some files and you have modified them, proceed to next step.&lt;/li&gt;
+      &lt;li&gt;Stage the changes(locally). Run the command:
+        &lt;div class=&quot;language-console highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;   $&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;git add &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;names of files you want to add &lt;span class=&quot;k&quot;&gt;in &lt;/span&gt;the repository&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;with file extension&lt;span class=&quot;o&quot;&gt;)}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
+        &lt;p&gt;You can also run:&lt;/p&gt;
+        &lt;div class=&quot;language-console highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;   $&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;git add &lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;# The . indicates to all newly added/modified files in the local repository folder.&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
+        &lt;p&gt;Hence, in the second command all newly added/modified files are moved to the staged area.&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Commit/confirm the changes (still locally). Run the command :
+        &lt;div class=&quot;language-console highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;   $&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;git commit &lt;span class=&quot;nt&quot;&gt;-m&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;message about the changes&quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
+        &lt;p&gt;The -m option and the following message is optional but highly recommended. It just takes a few keystrokes but will surely help you and others understand your commit when its a collaborative repository.&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Push the changes to remote repository (finally). Run the command:
+        &lt;div class=&quot;language-console highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;   $&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;git push
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
+      &lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;How to pull changes from remote repository on (probably older) local?&lt;/strong&gt;
+  Run the command :
+    &lt;div class=&quot;language-console highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;    $&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;git pull
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+    &lt;p&gt;This will bring the local repository upto date with remote. However, if you made some changes on your local, this will ask you to do something with the changes. We will come to this later on.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;git-tale_of_3_trees&quot;&gt;git –tale_of_3_trees&lt;/h2&gt;
+
+&lt;p&gt;So far we have only covered the basics, so you understand the basic know-how and terminologies. To better understand how Git is operating and for the rest of Git stuff to be smooth, we need to look into the metaphor of the three trees. These trees are different collections of files. Each of these trees has a different job: one tree to write changes, one tree to stage them, and one to point to your last commit on a branch in your Git repo.&lt;/p&gt;
+
+&lt;p&gt;For the workflow of adding and retrieving commits, Git uses three different versions of files:
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;the working directory&lt;/strong&gt; -&lt;/p&gt;
+
+    &lt;p&gt;The working tree is a single checkout of one version of the project. These files are pulled out of the compressed database in the remote Git repository and placed on disk for you to use or modify.
+The working directory represents the actual files on your computer’s file system that are available to your code editor to apply changes. The working directory is a version of a particular commit, a particular snapshot of a project that you checked out. It is the version of your Git history that HEAD is pointing at, at any given moment.Files whose contents can be changed are in your working directory. Files placed in your index are getting prepared to be packaged into a commit object. These commits are saved in your Git repository. 
+&lt;br /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;the index/staging area&lt;/strong&gt; -&lt;/p&gt;
+
+    &lt;p&gt;The staging area is a file, generally contained in your Git directory, that stores information about what will go into your next commit. Its technical name in Git parlance is the “index”, but the phrase “staging area” works just as well.
+ &lt;br /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;something called “HEAD” for creating and for retrieving commits&lt;/strong&gt; -&lt;/p&gt;
+
+    &lt;p&gt;The Git directory a.k.a “HEAD” is where Git stores the metadata and object database for your project. This is the most important part of Git, and it is what is copied when you clone a repository from another computer. HEAD is the part of git that points to your branches. It’s a reference, and it has a pretty simple but hugely important job. HEAD points to the currently checked out branch, and that in turn points back to the last commit from that branch.(You must be thinking what is a branch? Just consider your repository main code a tree and figure out what a branch can be. We will discuss this in detail next). HEAD can move not only in time (when you check out previous commits), but it also moves when you create new branches or simply switch to other branches. It’s also the point in your Git history that you can place your next commit upon, the parent for your next commit. With every new commit, it replaces its reference to the branch currently checked out—by default, the master branch, of course. So, in effect, HEAD is a reference that frequently changes and points to two things: the branch itself, and through that, the last commit on that branch.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+  &lt;img src=&quot;/blog/assets/img/git/git-trees.png&quot; alt=&quot;drawing&quot; style=&quot;width:500px;&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;The basic Git workflow goes something like this:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;You modify files in your working tree.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;You selectively stage just those changes you want to be part of your next commit, which adds only those changes to the staging area.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;You do a commit, which takes the files as they are in the staging area and stores that snapshot permanently to your Git directory.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;If a particular version of a file is in the Git directory, it’s considered committed. If it has been modified and was added to the staging area, it is staged. And if it was changed since it was checked out but has not been staged, it is modified.&lt;/p&gt;
+
+&lt;h2 id=&quot;git-branches&quot;&gt;git –branches&lt;/h2&gt;
+
+&lt;p&gt;Git branches are effectively a pointer to a snapshot of your codebase, ergo a specific version of it. When you want to add a new feature or fix a bug—no matter how big or how small—you spawn a new branch off your main (or development branch) to encapsulate your changes. This makes it harder for unstable code to get merged into the main code base, and it gives you the chance to clean up your future’s history before merging it into the main branch.&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+  &lt;img src=&quot;/blog/assets/img/git/git-branch1.jpg&quot; alt=&quot;drawing&quot; style=&quot;width:500px;&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;The diagram above visualizes a repository with two isolated lines of development, one for a little feature, and one for a longer-running feature. By developing them in branches, it’s not only possible to work on both of them in parallel, but it also keeps the main branch free from questionable code.The implementation behind Git branches is much more lightweight than other version control system models. Instead of copying files from directory to directory, Git stores a branch as a reference to a commit. In this sense, a branch represents the tip of a series of commits—it’s not a container for commits. The history for a branch is extrapolated through the commit relationships.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;A branch represents an independent line of development. Branches serve as an abstraction for the edit/stage/commit process. You can think of them as a way to request a brand new working directory, staging area, and project history. New commits are recorded in the history for the current branch, which results in a fork in the history of the project.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;The default branch is “main”. The alternative term “master” has been deprecated but is still used in some cases. Hence, “master” or “main” are just the names commonly used for the…. wait for it……. &lt;br /&gt;the main branch. But jokes apart, its just a name, you can name it “full_cake” as well (if your branches are “pastries”).&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Just like the branch name “master” does not have any special meaning in Git, neither does “origin”. While “master” is the default name for a starting branch when you run git init which is the only reason it’s widely used, “origin” is the default name for a remote when you run git clone. If you run git clone -o booyah instead, then you will have booyah/master as your default remote branch. In other words, “origin” is a name for the remote git domain name. (yes, git has many flavours apart from github)&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;How to work with branches?&lt;strong&gt;
+&lt;/strong&gt;&lt;/strong&gt;    &lt;ol&gt;
+      &lt;li&gt;Creating a local branch from current branch -
+        &lt;div class=&quot;language-console highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;   $&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;git checkout &lt;span class=&quot;nt&quot;&gt;-b&lt;/span&gt; &amp;lt;new_branch&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Creating a local branch from a specific branch -
+        &lt;div class=&quot;language-console highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;   $&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;git checkout &lt;span class=&quot;nt&quot;&gt;-b&lt;/span&gt; &amp;lt;new-branch&amp;gt; &amp;lt;from-branch-name&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Pushing the branch to remote repository -
+        &lt;div class=&quot;language-console highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;   $&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;git push origin &amp;lt;new_branch&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Deleting a remote branch -
+        &lt;div class=&quot;language-console highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;   $&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;git push origin &lt;span class=&quot;nt&quot;&gt;--delete&lt;/span&gt; &amp;lt;my-branch-name&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Deleting a local branch, run either of these commands-
+        &lt;div class=&quot;language-console highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;   $&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;git branch &lt;span class=&quot;nt&quot;&gt;-d&lt;/span&gt; &amp;lt;my-branch-name&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
+        &lt;p&gt;OR&lt;/p&gt;
+        &lt;div class=&quot;language-console highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;   $&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;git branch &lt;span class=&quot;nt&quot;&gt;-D&lt;/span&gt; &amp;lt;my-branch-name&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Switch an already present branch -
+        &lt;div class=&quot;language-console highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;   $&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;git pull &lt;span class=&quot;c&quot;&gt;# if the branch is remote,else can skip this&lt;/span&gt;
+&lt;span class=&quot;gp&quot;&gt;   $&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;git checkout &amp;lt;my-branch_name&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
+      &lt;/li&gt;
+      &lt;li&gt;List Branches -
+        &lt;div class=&quot;language-console highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;   $&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;git branch &lt;span class=&quot;c&quot;&gt;# local branches&lt;/span&gt;
+&lt;span class=&quot;gp&quot;&gt;   $&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;git branch &lt;span class=&quot;nt&quot;&gt;-r&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;# remote branches&lt;/span&gt;
+&lt;span class=&quot;gp&quot;&gt;   $&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;git branch &lt;span class=&quot;nt&quot;&gt;-a&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;# all local and remote branches&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
+      &lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;git-merge&quot;&gt;git –merge&lt;/h2&gt;
+
+&lt;p&gt;Merging is Git’s way of putting a forked history back together again. The git merge command lets you take the independent lines of development created by git branch and integrate them into a single branch.Note that all of the commands presented below merge into the current branch. The current branch will be updated to reflect the merge, but the target branch will be completely unaffected.Git merge will combine multiple sequences of commits into one unified history. In the most frequent use cases, git merge is used to combine two branches. In most common scenarios, git merge takes two commit pointers, usually the branch tips, and will find a common base commit between them. Once Git finds a common base commit it will create a new “merge commit” that combines the changes of each queued merge commit sequence.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Say we have a new branch feature that is based off the main branch. We now want to merge this feature branch into main.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+  &lt;img src=&quot;/blog/assets/img/git/git-merge1.png&quot; alt=&quot;drawing&quot; style=&quot;width:500px;&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Invoking this command will merge the specified branch feature into the current branch, we’ll assume main. Git will determine the merge algorithm automatically (discussed below).&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+  &lt;img src=&quot;/blog/assets/img/git/git-merge2.png&quot; alt=&quot;drawing&quot; style=&quot;width:500px;&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Merge commits are unique against other commits in the fact that they have two parent commits. When creating a merge commit Git will attempt to auto magically merge the separate histories for you. If Git encounters a piece of data that is changed in both histories it will be unable to automatically combine them. This scenario is a merge conflict and Git will need user intervention to continue.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;What are the general steps to merge branches smoothly?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Confirm the receiving branch&lt;/strong&gt;&lt;br /&gt;&lt;/p&gt;
+
+    &lt;p&gt;Execute git status to ensure that HEAD is pointing to the correct merge-receiving branch. If needed, execute git checkout to switch to the receiving branch. In our case we will execute git checkout main.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Fetch latest remote commits&lt;/strong&gt;&lt;br /&gt;&lt;/p&gt;
+
+    &lt;p&gt;Make sure the receiving branch and the merging branch are up-to-date with the latest remote changes. Execute git fetch to pull the latest remote commits. Once the fetch is completed ensure the main branch has the latest updates by executing git pull.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Merging&lt;/strong&gt;&lt;br /&gt;&lt;/p&gt;
+
+    &lt;p&gt;Once the previously discussed “preparing to merge” steps have been taken a merge can be initiated by executing git merge where  is the name of the branch that will be merged into the receiving branch.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Fast Forward Merge&lt;/strong&gt;&lt;br /&gt;&lt;/p&gt;
+
+    &lt;p&gt;A fast-forward merge can occur when there is a linear path from the current branch tip to the target branch. Instead of “actually” merging the branches, all Git has to do to integrate the histories is move (i.e., “fast forward”) the current branch tip up to the target branch tip. This effectively combines the histories, since all of the commits reachable from the target branch are now available through the current one. For example, a fast forward merge of some-feature into main would look something like the following:&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+  &lt;img src=&quot;/blog/assets/img/git/git-merge3.jpg&quot; alt=&quot;drawing&quot; style=&quot;width:500px;&quot; /&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;However, a fast-forward merge is not possible if the branches have diverged. When there is not a linear path to the target branch, Git has no choice but to combine them via a 3-way merge. 3-way merges use a dedicated commit to tie together the two histories. The nomenclature comes from the fact that Git uses three commits to generate the merge commit: the two branch tips and their common ancestor.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot;&gt;
+  &lt;img src=&quot;/blog/assets/img/git/git-merge4.jpg&quot; alt=&quot;drawing&quot; style=&quot;width:500px;&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;While you can use either of these merge strategies, many developers like to use fast-forward merges (facilitated through rebasing) for small features or bug fixes, while reserving 3-way merges for the integration of longer-running features. In the latter case, the resulting merge commit serves as a symbolic joining of the two branches.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Resolving Merge conflict&lt;/strong&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;If the two branches you’re trying to merge both changed the same part of the same file, Git won’t be able to figure out which version to use. When such a situation occurs, it stops right before the merge commit so that you can resolve the conflicts manually. The great part of Git’s merging process is that it uses the familiar edit/stage/commit workflow to resolve merge conflicts. When you encounter a merge conflict, running the git status command shows you which files need to be resolved. Most code editors or IDEs will also show the conflicts and even offer many intuitive GUI tools for you to resolve the conflicts in the codebase. Once you have resolved all conflicts manually, you need to push the merge to the remote repository because so far everything done is in your local branch. The merge commit needs to be pushed just like any other commit.&lt;/p&gt;
+
+&lt;h2 id=&quot;git-rebase&quot;&gt;git –rebase&lt;/h2&gt;
+
+&lt;p&gt;Rebase is one of two Git utilities that specializes in integrating changes from one branch onto another. The other change integration utility is git merge. Merge is always a forward moving change record. Alternatively, rebase has powerful history rewriting features. For a detailed look at Merge vs. Rebase, visit our Merging vs Rebasing guide. Rebase itself has 2 main modes: “manual” and “interactive” mode. It is a common way to integrate upstream changes into your local repository. Pulling in upstream changes with Git merge results in a superfluous merge commit every time you want to see how the project has progressed. On the other hand, rebasing is like saying, “I want to base my changes on what everybody has already done.”&lt;/p&gt;
+
+&lt;p&gt;Rebasing is the process of moving or combining a sequence of commits to a new base commit. Rebasing is most useful and easily visualized in the context of a feature branching workflow. The general process can be visualized as the following:&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+  &lt;img src=&quot;/blog/assets/img/git/git-rebase1.jpg&quot; alt=&quot;drawing&quot; style=&quot;width:500px;&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;From a content perspective, rebasing is changing the base of your branch from one commit to another making it appear as if you’d created your branch from a different commit. Internally, Git accomplishes this by creating new commits and applying them to the specified base. It’s very important to understand that even though the branch looks the same, it’s composed of entirely new commits.&lt;/p&gt;
+
+&lt;p&gt;The primary reason for rebasing is to maintain a linear project history. For example, consider a situation where the main branch has progressed since you started working on a feature branch. You want to get the latest updates to the main branch in your feature branch, but you want to keep your branch’s history clean so it appears as if you’ve been working off the latest main branch. This gives the later benefit of a clean merge of your feature branch back into the main branch. Why do we want to maintain a “clean history”? The benefits of having a clean history become tangible when performing Git operations to investigate the introduction of a regression. You have two options for integrating your feature into the main branch: merging directly or rebasing and then merging. The former option results in a 3-way merge and a merge commit, while the latter results in a fast-forward merge and a perfectly linear history. The following diagram demonstrates how rebasing onto the main branch facilitates a fast-forward merge.&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+  &lt;img src=&quot;/blog/assets/img/git/git-rebase2.jpg&quot; alt=&quot;drawing&quot; style=&quot;width:500px;&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;It is important to note that git rebase rewrites the commit history. It can be harmful to do it in shared branches. It can cause complex and hard to resolve merge conflicts. In these cases, instead of rebasing your branch against the default branch, consider pulling it instead (git pull origin master). It has a similar effect without compromising the work of your contributors.
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;How to rebase?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Before rebasing&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;It’s safer to back up your branch before rebasing to make sure you don’t lose any changes. For example, consider a feature branch called my-feature-branch:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Open your feature branch in the terminal:
+    &lt;div class=&quot;language-console highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;  $&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;git checkout my-feature-branch
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Checkout a new branch from it:
+    &lt;div class=&quot;language-console highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;  $&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;git checkout &lt;span class=&quot;nt&quot;&gt;-b&lt;/span&gt; my-feature-branch-backup
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Go back to your original branch:
+    &lt;div class=&quot;language-console highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;  $&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;git checkout my-feature-branch
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+    &lt;p&gt;Now you can safely rebase it. If anything goes wrong, you can recover your changes by resetting my-feature-branch against my-feature-branch-backup using the following command:&lt;/p&gt;
+    &lt;div class=&quot;language-console highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;  $&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;git reset &lt;span class=&quot;nt&quot;&gt;--hard&lt;/span&gt; my-feature-branch-backup
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+    &lt;p&gt;Note that if you added changes to my-feature-branch after creating the backup branch, you lose them when resetting.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Regular rebase&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+  &lt;img src=&quot;/blog/assets/img/git/git-rebase3.png&quot; alt=&quot;drawing&quot; style=&quot;width:1000px;&quot; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;With a regular rebase you can update your feature branch with the default branch (or any other branch). This is an important step for Git-based development strategies. You can ensure that the changes you’re adding to the codebase do not break any existing changes added to the target branch after you created your feature branch.&lt;/p&gt;
+
+&lt;p&gt;For example, to update your branch my-feature-branch with your default branch (here, using main):&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Fetch the latest changes from main:
+    &lt;div class=&quot;language-console highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt; $&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;git fetch origin main
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Checkout your feature branch:
+    &lt;div class=&quot;language-console highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt; $&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;git checkout my-feature-branch
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Rebase it against main:
+    &lt;div class=&quot;language-console highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt; $&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;git rebase origin/main
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Force-push to your branch.(When you perform more complex operations, for example, squash commits, reset or rebase your branch, you must force an update to the remote branch. These operations imply rewriting the commit history of the branch. To force an update, pass the flag –force or -f to the push command. )
+    &lt;div class=&quot;language-console highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt; $&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;git push &lt;span class=&quot;nt&quot;&gt;--force&lt;/span&gt; origin my-feature-branch
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;strong&gt;Git merge vs Git rebase&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Merge takes all the changes in one branch and merges them into another branch in one commit.Let’s say you have created a branch for the purpose of developing a single feature. When you want to bring those changes back to master, you probably want merge (you don’t care about maintaining all of the interim commits).&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Rebase says I want the point at which I branched to move to a new starting point. If you started doing some development and then another developer made an unrelated change. You probably want to pull and then rebase to base your changes from the current version from the repository.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;git-org_workflows&quot;&gt;git –org_workflows&lt;/h2&gt;
+&lt;p&gt;Every organisation uses a specific workflow when managing codebase using any flavour of Git. A Git workflow is like a bureaucratic system where the members of the repository have different roles on different branches, just like any federal government. Since its not exactly a Git technique, I won’t be covering it in this guide. You can have a look at common git workflows at this &lt;a href=&quot;https://zepel.io/blog/5-git-workflows-to-improve-development/&quot; target=&quot;_blank&quot;&gt;link&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;git-miscellaneous&quot;&gt;git –miscellaneous&lt;/h2&gt;
+&lt;p&gt;I have not covered all git commands and their various options as you can always refer to a &lt;a href=&quot;https://education.github.com/git-cheat-sheet-education.pdf&quot; target=&quot;_blank&quot;&gt;cheatsheet&lt;/a&gt; for that. Based on the scenarios you may face, you can figure out options now that you understand how Git works and all the major methods. Here are a few more commands that are useful on a regular basis:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;Status&lt;/strong&gt; -
+    &lt;div class=&quot;language-console highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt; $&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;git status
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+    &lt;p&gt;List which files are staged, unstaged, and untracked.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Fetch&lt;/strong&gt; -
+    &lt;div class=&quot;language-console highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt; $&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;git fetch
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+    &lt;p&gt;The git fetch command downloads commits, files, and refs from a remote repository into your local repo. Fetching is what you do when you want to see what everybody else has been working on. Git isolates fetched content from existing local content; it has absolutely no effect on your local development work. Fetched content has to be explicitly checked out using the git checkout command. This makes fetching a safe way to review commits before integrating them with your local repository.&lt;br /&gt;&lt;/p&gt;
+
+    &lt;p&gt;When downloading content from a remote repo, git pull and git fetch commands are available to accomplish the task. You can consider git fetch the ‘safe’ version of the two commands. It will download the remote content but not update your local repo’s working state, leaving your current work intact. git pull is the more aggressive alternative; it will download the remote content for the active local branch and immediately execute git merge to create a merge commit for the new remote content. If you have pending changes in progress this will cause conflicts and kick-off the merge conflict resolution flow.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Log&lt;/strong&gt; -
+    &lt;div class=&quot;language-console highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt; $&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;git log
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+    &lt;p&gt;Display the entire commit history using the default format.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Diff&lt;/strong&gt; -
+    &lt;div class=&quot;language-console highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt; $&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;git diff
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+    &lt;p&gt;Show unstaged changes between your index and working directory.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Feel free to let me know in the comments below or reach out to me on the platforms(links on the left) to discuss Git. I am giving credits to the resources I used to create this guide in the links below.&lt;/p&gt;
+
+&lt;p&gt;References : &lt;a href=&quot;https://pamodaaw.medium.com/a-simple-guide-to-starting-with-git-516f41a696f2&quot; target=&quot;_blank&quot;&gt;Medium&lt;/a&gt;,&lt;a href=&quot;https://code.tutsplus.com/tutorials/what-are-the-three-trees-in-git--cms-28188&quot; target=&quot;_blank&quot;&gt;Tutsplus&lt;/a&gt;,&lt;a href=&quot;https://git-scm.com/&quot; target=&quot;_blank&quot;&gt;Git-scm&lt;/a&gt;,&lt;a href=&quot;https://www.atlassian.com/git/tutorials&quot; target=&quot;_blank&quot;&gt;Atlassian&lt;/a&gt;,&lt;a href=&quot;https://docs.gitlab.com/&quot; target=&quot;_blank&quot;&gt;Gitlab Docs&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Image Credit: &lt;a href=&quot;https://softchief.com/&quot; target=&quot;_blank&quot;&gt;SoftChief&lt;/a&gt;,&lt;a href=&quot;https://softchief.com/&quot; target=&quot;_blank&quot;&gt;ImgFlip&lt;/a&gt;,&lt;a href=&quot;https://www.atlassian.com/git/tutorials&quot; target=&quot;_blank&quot;&gt;Atlassian&lt;/a&gt;&lt;/p&gt;</content><author><name>Aneesh Dua</name><email>workstuff.dua@gmail.com</email></author><category term="tblog" /><summary type="html"></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/git/git-front.png" /><media:content medium="image" url="http://localhost:4000/assets/img/git/git-front.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">How to automatically setup your linux environment</title><link href="http://localhost:4000/tblog/2021-07-31-setup-linux/" rel="alternate" type="text/html" title="How to automatically setup your linux environment" /><published>2021-07-31T00:00:00+05:30</published><updated>2021-07-31T00:00:00+05:30</updated><id>http://localhost:4000/tblog/setup-linux</id><content type="html" xml:base="http://localhost:4000/tblog/2021-07-31-setup-linux/">&lt;h2 id=&quot;what-do-i-mean-by-environment-setup&quot;&gt;What do I mean by environment setup?&lt;/h2&gt;
 &lt;div style=&quot;text-align: justify&quot;&gt;
 Linux installations can be easily messed up if you are still a beginner or intermediate developer. Often, I personally found myself reinstalling the OS completely as I had messed up some configuration or the other. Once, I tried to install a newer version (not update, I was trying a new release altogether) of the linux kernel. Oh boy, did I mess up my Ubuntu. So, if you also find yourself installing and setting up your linux environment time and again like me, I have just the thing that will smooth the process like butter on warm bread. &lt;br /&gt;&lt;br /&gt;
 
@@ -8,7 +414,7 @@ There is a plethora of linux distros available now, with many coming with inbuil
 
 &lt;h2 id=&quot;how-do-we-automate-it&quot;&gt;How do we automate it?&lt;/h2&gt;
 &lt;p align=&quot;center&quot;&gt;
-  &lt;img src=&quot;/assets/img/linux_automate/2.jpg&quot; alt=&quot;drawing&quot; style=&quot;width:500px;&quot; /&gt;
+  &lt;img src=&quot;/blog//assets/img/linux_automate/2.jpg&quot; alt=&quot;drawing&quot; style=&quot;width:500px;&quot; /&gt;
 &lt;/p&gt;
 
 &lt;div style=&quot;text-align: justify&quot;&gt;
