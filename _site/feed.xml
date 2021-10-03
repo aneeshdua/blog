@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2021-10-03T16:18:08+05:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">Hacker Monk</title><subtitle>A hacker by instinct and monk by mindset.
-</subtitle><author><name>Aneesh Dua</name><email>workstuff.dua@gmail.com</email></author><entry><title type="html">A Definitive guide to Git</title><link href="http://localhost:4000/tblog/2021-09-18-git-guide/" rel="alternate" type="text/html" title="A Definitive guide to Git" /><published>2021-09-18T00:00:00+05:30</published><updated>2021-09-18T00:00:00+05:30</updated><id>http://localhost:4000/tblog/git-guide</id><content type="html" xml:base="http://localhost:4000/tblog/2021-09-18-git-guide/">&lt;p&gt;Git is one of the most common skill among all sorts of developers. However, it also the one in which they struggle with in their initial years. I have also been in the same boat, hence while I was on the journey of learning it, I compiled all the resources I learnt from in this guide. The guide also contains my inputs here and there.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2021-10-03T22:27:20+05:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">Hacker Monk</title><subtitle>A hacker by instinct and monk by mindset.
+</subtitle><author><name>Aneesh Dua</name><email>workstuff.dua@gmail.com</email></author><entry><title type="html">A Definitive guide to Git</title><link href="http://localhost:4000/tblog/2021-10-03-git-guide/" rel="alternate" type="text/html" title="A Definitive guide to Git" /><published>2021-10-03T00:00:00+05:30</published><updated>2021-10-03T00:00:00+05:30</updated><id>http://localhost:4000/tblog/git-guide</id><content type="html" xml:base="http://localhost:4000/tblog/2021-10-03-git-guide/">&lt;p&gt;Git is one of the most common skill among all sorts of developers. However, it also the one in which they struggle with in their initial years. I have also been in the same boat, hence while I was on the journey of learning it, I compiled all the resources I learnt from in this guide. The guide also contains my inputs here and there.&lt;/p&gt;
 
 &lt;h2 id=&quot;git-intro&quot;&gt;git –intro&lt;/h2&gt;
 
@@ -35,6 +35,10 @@ Follow this &lt;a href=&quot;https://git-scm.com/downloads&quot; target=&quot;_b
 
     &lt;p&gt;Its a directory where you put your codebase. The directory is stored online (on Github/Gitlab or equivalent) and you can have a local copy of it on your computer as well. Every repository contains a “.git” folder which is hidden by default. This folder contains all the git related files and shouldn’t be edited manually in most cases. A repository contains your original data files,logs  with messages,author information,other information required to rebuild any version or branch of the project.&lt;/p&gt;
   &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt; What is meant by forking in software development?&lt;/strong&gt; - &lt;br /&gt;
+A fork is a copy of a repository. Forking a repository allows you to freely experiment with changes without affecting the original project. In pther words, you fork a copy of a repository into another repository and work on it.&lt;/p&gt;
+  &lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;git-objects&quot;&gt;git –objects&lt;/h2&gt;
@@ -43,9 +47,9 @@ Follow this &lt;a href=&quot;https://git-scm.com/downloads&quot; target=&quot;_b
 
 &lt;ul&gt;
   &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Blobs&lt;/strong&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;strong&gt;BLOBs&lt;/strong&gt;&lt;/p&gt;
 
-    &lt;p&gt;Each version of a file is represented as a blob. It stands for: “binary large object”, is a term that’s commonly used in computing to refer to some variable or file that can contain any data and whose internal structure is ignored by the program. A blob holds a file’s data but does not contain any metadata about the file or even its name.Git uses blobs to track files, but you should note that a blob stores only the contents of our file, not the name.&lt;/p&gt;
+    &lt;p&gt;Each version of a file is represented as a BLOB. It stands for: “binary large object”, is a term that’s commonly used in computing to refer to some variable or file that can contain any data and whose internal structure is ignored by the program. A blob holds a file’s data but does not contain any metadata about the file or even its name.Git uses blobs to track files, but you should note that a blob stores only the contents of our file, not the name.&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;&lt;strong&gt;Trees&lt;/strong&gt;&lt;/p&gt;
@@ -64,9 +68,9 @@ Follow this &lt;a href=&quot;https://git-scm.com/downloads&quot; target=&quot;_b
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&quot;git-basics&quot;&gt;git –basics&lt;/h2&gt;
+&lt;h2 id=&quot;git-basic_hands_on&quot;&gt;git –basic_hands_on&lt;/h2&gt;
 
-&lt;p&gt;Lets get some hands on the basic tasks and terminologies of Git&lt;/p&gt;
+&lt;p&gt;Lets get some hands on the basic tasks and terminologies of Git so that we can get started.&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;strong&gt;How to create a repository?&lt;/strong&gt; - There are two methods:
@@ -164,19 +168,30 @@ The working directory represents the actual files on your computer’s file syst
 
 &lt;h2 id=&quot;git-branches&quot;&gt;git –branches&lt;/h2&gt;
 
-&lt;p&gt;Git branches are effectively a pointer to a snapshot of your codebase, ergo a specific version of it. When you want to add a new feature or fix a bug—no matter how big or how small—you spawn a new branch off your main (or development branch) to encapsulate your changes. This makes it harder for unstable code to get merged into the main code base, and it gives you the chance to clean up your future’s history before merging it into the main branch.&lt;/p&gt;
+&lt;p&gt;Git branches are effectively a pointer to a snapshot of your codebase, ergo a specific version of it. When you want to add a new feature or fix a bug—no matter how big or how small—you spawn a new branch off your main (or development branch) to encapsulate your changes. This makes it harder for unstable code to get merged into the main code base, and it gives you the chance to clean up your feature’s history before merging it into the main branch.&lt;/p&gt;
 
 &lt;p align=&quot;center&quot;&gt;
   &lt;img src=&quot;/blog/assets/img/git/git-branch1.jpg&quot; alt=&quot;drawing&quot; style=&quot;width:500px;&quot; /&gt;
 &lt;/p&gt;
 
-&lt;p&gt;The diagram above visualizes a repository with two isolated lines of development, one for a little feature, and one for a longer-running feature. By developing them in branches, it’s not only possible to work on both of them in parallel, but it also keeps the main branch free from questionable code.The implementation behind Git branches is much more lightweight than other version control system models. Instead of copying files from directory to directory, Git stores a branch as a reference to a commit. In this sense, a branch represents the tip of a series of commits—it’s not a container for commits. The history for a branch is extrapolated through the commit relationships.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;The diagram above visualizes a repository with two isolated lines of development, one for a little feature, and one for a longer-running feature. By developing them in branches, it’s not only possible to work on both of them in parallel, but it also keeps the main or &lt;strong&gt;parent&lt;/strong&gt; branch free from questionable code.The implementation behind Git branches is much more lightweight than other version control system models. Instead of copying files from directory to directory, Git stores a branch as a reference to a commit. In this sense, a branch represents the tip of a series of commits—it’s not a container for commits. The history for a branch is extrapolated through the commit relationships.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
-&lt;p&gt;A branch represents an independent line of development. Branches serve as an abstraction for the edit/stage/commit process. You can think of them as a way to request a brand new working directory, staging area, and project history. New commits are recorded in the history for the current branch, which results in a fork in the history of the project.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;A branch represents an independent line of development. It is important to understand that all branches except the main/default branch have a parent; the one from which the branch originated. This concept will be further used in many advanced concepts. Branches serve as an abstraction for the edit/stage/commit process. You can think of them as a way to request a brand new working directory, staging area, and project history. New commits are recorded in the history for the current branch, which results in a fork in the project.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
-&lt;p&gt;The default branch is “main”. The alternative term “master” has been deprecated but is still used in some cases. Hence, “master” or “main” are just the names commonly used for the…. wait for it……. &lt;br /&gt;the main branch. But jokes apart, its just a name, you can name it “full_cake” as well (if your branches are “pastries”).&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;The default branch is “main”. The alternative term “master” has been deprecated but is still used in some cases. Hence, “master” or “main” are just the names commonly used for the…. wait for it……. &lt;br /&gt;the main branch. But jokes apart, its just a name, you can name it “full_cake” as well (if your branches are “pastries” 😛). Just create a branch and set it as default branch using the Git web UI or set the default main branch in your local git settings :&lt;/p&gt;
+&lt;div class=&quot;language-console highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;    $&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;git branch &lt;span class=&quot;nt&quot;&gt;-m&lt;/span&gt; &amp;lt;current_default&amp;gt; &amp;lt;new_default&amp;gt; &lt;span class=&quot;c&quot;&gt;# for renaming the default/main branch for the current repository&lt;/span&gt;
+&lt;span class=&quot;gp&quot;&gt;    $&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;git push
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;You can also change the global setting for default branch names when you initialise a new repository.&lt;/p&gt;
+&lt;div class=&quot;language-console highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;    $&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;git config &lt;span class=&quot;nt&quot;&gt;--global&lt;/span&gt; init.defaultBranch &amp;lt;custom_default_branch&amp;gt; &lt;span class=&quot;c&quot;&gt;# this will set default branch name to the custom name you set&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
-&lt;p&gt;Just like the branch name “master” does not have any special meaning in Git, neither does “origin”. While “master” is the default name for a starting branch when you run git init which is the only reason it’s widely used, “origin” is the default name for a remote when you run git clone. If you run git clone -o booyah instead, then you will have booyah/master as your default remote branch. In other words, “origin” is a name for the remote git domain name. (yes, git has many flavours apart from github)&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;Just like the branch name “master” does not have any special meaning in Git, neither does “origin”. While “master” is the default name for a starting branch when you run git init which is the only reason it’s widely used, “origin” is the default name for a remote when you run git clone. If you run git clone -o booyah instead, then you will have booyah/master as your default remote branch. In other words, “origin” is a name for the remote git domain name. (yes, git has many flavours apart from github)
+You can check and change the remote repo name using the following commands:&lt;/p&gt;
+&lt;div class=&quot;language-console highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;  $&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;git remote &lt;span class=&quot;nt&quot;&gt;-v&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;# check the current remote name&lt;/span&gt;
+&lt;span class=&quot;gp&quot;&gt;  $&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;git remote rename &amp;lt;current_remote_name&amp;gt; &amp;lt;new_remote_name&amp;gt; &lt;span class=&quot;c&quot;&gt;# rename the remote repo&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;strong&gt;How to work with branches?&lt;strong&gt;

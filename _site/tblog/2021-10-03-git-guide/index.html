@@ -39,17 +39,17 @@ Powered by Hydejack v9.1.4 <https://hydejack.com/>
 <meta property="og:locale" content="en" />
 <meta name="description" content="Git is the most commonly required skill for a developer. I have compiled various git resources and created a guide for beginners as well as intermediate developers." />
 <meta property="og:description" content="Git is the most commonly required skill for a developer. I have compiled various git resources and created a guide for beginners as well as intermediate developers." />
-<link rel="canonical" href="http://localhost:4000/tblog/2021-09-18-git-guide/" />
-<meta property="og:url" content="http://localhost:4000/tblog/2021-09-18-git-guide/" />
+<link rel="canonical" href="http://localhost:4000/tblog/2021-10-03-git-guide/" />
+<meta property="og:url" content="http://localhost:4000/tblog/2021-10-03-git-guide/" />
 <meta property="og:site_name" content="Hacker Monk" />
 <meta property="og:image" content="http://localhost:4000/assets/img/git/git-front.png" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2021-09-18T00:00:00+05:30" />
+<meta property="article:published_time" content="2021-10-03T00:00:00+05:30" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta property="twitter:image" content="http://localhost:4000/assets/img/git/git-front.png" />
 <meta property="twitter:title" content="A Definitive guide to Git" />
 <script type="application/ld+json">
-{"image":"http://localhost:4000/assets/img/git/git-front.png","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/tblog/2021-09-18-git-guide/"},"@type":"BlogPosting","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/img/hm_white_medium.png"},"name":"Aneesh Dua"},"description":"Git is the most commonly required skill for a developer. I have compiled various git resources and created a guide for beginners as well as intermediate developers.","url":"http://localhost:4000/tblog/2021-09-18-git-guide/","author":{"@type":"Person","name":"Aneesh Dua"},"headline":"A Definitive guide to Git","dateModified":"2021-09-18T00:00:00+05:30","datePublished":"2021-09-18T00:00:00+05:30","@context":"https://schema.org"}</script>
+{"image":"http://localhost:4000/assets/img/git/git-front.png","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/tblog/2021-10-03-git-guide/"},"@type":"BlogPosting","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/img/hm_white_medium.png"},"name":"Aneesh Dua"},"description":"Git is the most commonly required skill for a developer. I have compiled various git resources and created a guide for beginners as well as intermediate developers.","url":"http://localhost:4000/tblog/2021-10-03-git-guide/","author":{"@type":"Person","name":"Aneesh Dua"},"headline":"A Definitive guide to Git","dateModified":"2021-10-03T00:00:00+05:30","datePublished":"2021-10-03T00:00:00+05:30","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -76,7 +76,7 @@ Powered by Hydejack v9.1.4 <https://hydejack.com/>
 <meta name="generator" content="Hydejack v9.1.4" />
 
 
-<link rel="alternate" href="http://localhost:4000/tblog/2021-09-18-git-guide/" hreflang="en">
+<link rel="alternate" href="http://localhost:4000/tblog/2021-10-03-git-guide/" hreflang="en">
 
 <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Hacker Monk" />
 
@@ -111,7 +111,7 @@ Powered by Hydejack v9.1.4 <https://hydejack.com/>
   w._search = {
     DATA_URL: '/assets/sitedata.json?no-cache',
     STORAGE_KEY: 'mini-search/',
-    INDEX_KEY: 'index--2021-10-03T16:18:08+05:30',
+    INDEX_KEY: 'index--2021-10-03T22:27:20+05:30',
   };
   w._clapButton = true;
 }(window);</script>
@@ -260,7 +260,7 @@ Left here for reference, feel free to delete.
       <li>
       
         <span>/</span>
-        <span>2021-09-18-git-guide</span>
+        <span>2021-10-03-git-guide</span>
       
       </li>
     
@@ -288,7 +288,7 @@ Left here for reference, feel free to delete.
     <div class="post-date">
       
       <span class="ellipsis mr1">
-        <time datetime="2021-09-18T00:00:00+05:30">18 Sep 2021</time> in <a href="/tblog/" class="flip-title">Technical Blog</a> 
+        <time datetime="2021-10-03T00:00:00+05:30">03 Oct 2021</time> in <a href="/tblog/" class="flip-title">Technical Blog</a> 
       </span>
       
     </div>
@@ -371,6 +371,10 @@ Follow this <a href="https://git-scm.com/downloads" target="_blank">link</a></p>
 
     <p>Its a directory where you put your codebase. The directory is stored online (on Github/Gitlab or equivalent) and you can have a local copy of it on your computer as well. Every repository contains a “.git” folder which is hidden by default. This folder contains all the git related files and shouldn’t be edited manually in most cases. A repository contains your original data files,logs  with messages,author information,other information required to rebuild any version or branch of the project.</p>
   </li>
+  <li>
+    <p><strong> What is meant by forking in software development?</strong> - <br />
+A fork is a copy of a repository. Forking a repository allows you to freely experiment with changes without affecting the original project. In pther words, you fork a copy of a repository into another repository and work on it.</p>
+  </li>
 </ul>
 
 <h2 id="git-objects">git –objects</h2>
@@ -379,9 +383,9 @@ Follow this <a href="https://git-scm.com/downloads" target="_blank">link</a></p>
 
 <ul>
   <li>
-    <p><strong>Blobs</strong></p>
+    <p><strong>BLOBs</strong></p>
 
-    <p>Each version of a file is represented as a blob. It stands for: “binary large object”, is a term that’s commonly used in computing to refer to some variable or file that can contain any data and whose internal structure is ignored by the program. A blob holds a file’s data but does not contain any metadata about the file or even its name.Git uses blobs to track files, but you should note that a blob stores only the contents of our file, not the name.</p>
+    <p>Each version of a file is represented as a BLOB. It stands for: “binary large object”, is a term that’s commonly used in computing to refer to some variable or file that can contain any data and whose internal structure is ignored by the program. A blob holds a file’s data but does not contain any metadata about the file or even its name.Git uses blobs to track files, but you should note that a blob stores only the contents of our file, not the name.</p>
   </li>
   <li>
     <p><strong>Trees</strong></p>
@@ -400,9 +404,9 @@ Follow this <a href="https://git-scm.com/downloads" target="_blank">link</a></p>
   </li>
 </ul>
 
-<h2 id="git-basics">git –basics</h2>
+<h2 id="git-basic_hands_on">git –basic_hands_on</h2>
 
-<p>Lets get some hands on the basic tasks and terminologies of Git</p>
+<p>Lets get some hands on the basic tasks and terminologies of Git so that we can get started.</p>
 
 <ul>
   <li><strong>How to create a repository?</strong> - There are two methods:
@@ -500,19 +504,30 @@ The working directory represents the actual files on your computer’s file syst
 
 <h2 id="git-branches">git –branches</h2>
 
-<p>Git branches are effectively a pointer to a snapshot of your codebase, ergo a specific version of it. When you want to add a new feature or fix a bug—no matter how big or how small—you spawn a new branch off your main (or development branch) to encapsulate your changes. This makes it harder for unstable code to get merged into the main code base, and it gives you the chance to clean up your future’s history before merging it into the main branch.</p>
+<p>Git branches are effectively a pointer to a snapshot of your codebase, ergo a specific version of it. When you want to add a new feature or fix a bug—no matter how big or how small—you spawn a new branch off your main (or development branch) to encapsulate your changes. This makes it harder for unstable code to get merged into the main code base, and it gives you the chance to clean up your feature’s history before merging it into the main branch.</p>
 
 <p align="center">
   <img src="/blog/assets/img/git/git-branch1.jpg" alt="drawing" style="width:500px;" />
 </p>
 
-<p>The diagram above visualizes a repository with two isolated lines of development, one for a little feature, and one for a longer-running feature. By developing them in branches, it’s not only possible to work on both of them in parallel, but it also keeps the main branch free from questionable code.The implementation behind Git branches is much more lightweight than other version control system models. Instead of copying files from directory to directory, Git stores a branch as a reference to a commit. In this sense, a branch represents the tip of a series of commits—it’s not a container for commits. The history for a branch is extrapolated through the commit relationships.<br /><br /></p>
+<p>The diagram above visualizes a repository with two isolated lines of development, one for a little feature, and one for a longer-running feature. By developing them in branches, it’s not only possible to work on both of them in parallel, but it also keeps the main or <strong>parent</strong> branch free from questionable code.The implementation behind Git branches is much more lightweight than other version control system models. Instead of copying files from directory to directory, Git stores a branch as a reference to a commit. In this sense, a branch represents the tip of a series of commits—it’s not a container for commits. The history for a branch is extrapolated through the commit relationships.<br /><br /></p>
 
-<p>A branch represents an independent line of development. Branches serve as an abstraction for the edit/stage/commit process. You can think of them as a way to request a brand new working directory, staging area, and project history. New commits are recorded in the history for the current branch, which results in a fork in the history of the project.<br /><br /></p>
+<p>A branch represents an independent line of development. It is important to understand that all branches except the main/default branch have a parent; the one from which the branch originated. This concept will be further used in many advanced concepts. Branches serve as an abstraction for the edit/stage/commit process. You can think of them as a way to request a brand new working directory, staging area, and project history. New commits are recorded in the history for the current branch, which results in a fork in the project.<br /><br /></p>
 
-<p>The default branch is “main”. The alternative term “master” has been deprecated but is still used in some cases. Hence, “master” or “main” are just the names commonly used for the…. wait for it……. <br />the main branch. But jokes apart, its just a name, you can name it “full_cake” as well (if your branches are “pastries”).<br /><br /></p>
+<p>The default branch is “main”. The alternative term “master” has been deprecated but is still used in some cases. Hence, “master” or “main” are just the names commonly used for the…. wait for it……. <br />the main branch. But jokes apart, its just a name, you can name it “full_cake” as well (if your branches are “pastries” 😛). Just create a branch and set it as default branch using the Git web UI or set the default main branch in your local git settings :</p>
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">    $</span><span class="w"> </span>git branch <span class="nt">-m</span> &lt;current_default&gt; &lt;new_default&gt; <span class="c"># for renaming the default/main branch for the current repository</span>
+<span class="gp">    $</span><span class="w"> </span>git push
+</code></pre></div></div>
+<p>You can also change the global setting for default branch names when you initialise a new repository.</p>
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">    $</span><span class="w"> </span>git config <span class="nt">--global</span> init.defaultBranch &lt;custom_default_branch&gt; <span class="c"># this will set default branch name to the custom name you set</span>
+</code></pre></div></div>
+<p><br /></p>
 
-<p>Just like the branch name “master” does not have any special meaning in Git, neither does “origin”. While “master” is the default name for a starting branch when you run git init which is the only reason it’s widely used, “origin” is the default name for a remote when you run git clone. If you run git clone -o booyah instead, then you will have booyah/master as your default remote branch. In other words, “origin” is a name for the remote git domain name. (yes, git has many flavours apart from github)<br /><br /></p>
+<p>Just like the branch name “master” does not have any special meaning in Git, neither does “origin”. While “master” is the default name for a starting branch when you run git init which is the only reason it’s widely used, “origin” is the default name for a remote when you run git clone. If you run git clone -o booyah instead, then you will have booyah/master as your default remote branch. In other words, “origin” is a name for the remote git domain name. (yes, git has many flavours apart from github)
+You can check and change the remote repo name using the following commands:</p>
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">  $</span><span class="w"> </span>git remote <span class="nt">-v</span> <span class="c"># check the current remote name</span>
+<span class="gp">  $</span><span class="w"> </span>git remote rename &lt;current_remote_name&gt; &lt;new_remote_name&gt; <span class="c"># rename the remote repo</span>
+</code></pre></div></div>
 
 <ul>
   <li><strong>How to work with branches?<strong>
